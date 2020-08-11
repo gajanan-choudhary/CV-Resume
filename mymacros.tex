@@ -1,0 +1,131 @@
+%--------------------------------%
+% Author     : Gajanan Choudhary %
+% License    : MIT               %
+% About file : LaTeX Resume      %
+%--------------------------------%
+
+%----------------------------------------------%
+% Edit the following -- Put your details below %
+%----------------------------------------------%
+
+\newcommand{\Author}{Gajanan Choudhary}
+\newcommand{\AuthorEmail}{gajanan@utexas.edu}
+\newcommand{\AuthorPhone}{(512) 657-3030}
+
+% You need to escape special characters in website link.
+% See: https://stackoverflow.com/questions/2894710/how-to-write-urls-in-latex
+\newcommand{\AuthorWebsiteText}{https://users.oden.utexas.edu/$\smallsim$gajanan/}
+\newcommand{\AuthorWebsiteLink}{https://users.oden.utexas.edu/~gajanan/}
+
+%------------------%
+% Utility commands %
+%------------------%
+\newcommand{\dates}[2]{#1 -- #2}
+
+%--------------------------------------------------------------%
+% Wordcloud colors
+\definecolor{utorange}{RGB}{191, 87, 0}
+\definecolor{utgray}{RGB}{51, 63, 72}
+
+%--------------------------------------------------------------%
+% Need a prettier way to write "C++"
+% See: https://tex.stackexchange.com/questions/4302/prettiest-way-to-typeset-c-cplusplus
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+%--------------------------------------------------------------%
+% Need a smaller "~" symbol w.r.t. surrounding font.
+% Following taken from:
+% https://tex.stackexchange.com/questions/306079/how-to-generate-a-smaller-sim-with-respect-to-text
+
+\makeatletter
+\newcommand{\smallsym}[2]{#1{\mathpalette\make@small@sym{#2}}}
+\newcommand{\make@small@sym}[2]{%
+  \vcenter{\hbox{$\m@th\downgrade@style#1#2$}}%
+}
+\newcommand{\downgrade@style}[1]{%
+  \ifx#1\displaystyle\scriptstyle\else
+    \ifx#1\textstyle\scriptstyle\else
+      \scriptscriptstyle
+  \fi\fi
+}
+\makeatother
+
+% This allows the \smallsim command for \sim.
+\newcommand{\smallsim}{\smallsym{\mathrel}{\sim}}
+%--------------------------------------------------------------%
+
+
+%----------------------------------------------------------%
+% Most likely, you will not need to edit things below this %
+%----------------------------------------------------------%
+
+%---------------------------------------------------------------------------%
+% Utility commands -- Borrowed from (MIT licensed) github.com/sb2nov/resume %
+% Note: I have modified a few things after borrowing.                       %
+%---------------------------------------------------------------------------%
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.25in}
+\addtolength{\textheight}{0.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%---------------------------------------------------------------------------%
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-15pt}\scshape\raggedright\large
+}{}{0em}{\color{gray}\titlerule[0.5pt]\color{black}\\}[\vspace{-6pt}]
+
+
+%---------------------------------------------------------------------------%
+%---- gkc Modifying ----%
+%\newcommand{\resumeSubheading}[4]{  % Original
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabularx}{\linewidth}[t]{Xr}
+      \textbf{#1} & #2 \\
+    \end{tabularx}\vspace{-13pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-3pt}
+    \begin{tabularx}{\linewidth}{Xr}
+      \textit{#1} & \textit{#2} \\
+    \end{tabularx}\vspace{-13pt}
+}
+
+%---------------------------------------------------------------------------%
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    {#1}{: #2 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-7pt}}
+  }
+}
+
+%\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{\small{$\circ$}}
+
+%---------------------------------------------------------------------------%
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%---------------------------------------------------------------------------%
+\newcommand{\resumeItemListStart}{\vspace{-7pt}\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+

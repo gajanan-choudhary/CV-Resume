@@ -1,0 +1,69 @@
+%--------------------------------%
+% Author     : Gajanan Choudhary %
+% License    : MIT               %
+% About file : LaTeX Resume      %
+%--------------------------------%
+
+\RequirePackage{ifpdf}[2.3]
+\ifpdf
+  \pdfminorversion=7
+\fi
+
+\usepackage{cmap}  % For fixing copy pasting ligatures - ff, fi, fl, ffl, etc.
+%Partially deal with overfull hbox / vbox
+\usepackage[T1]{fontenc}
+%\usepackage[final]{microtype}
+
+% Some packages to write mathematics.
+%\usepackage{amsmath,amsthm,amsfonts,amscd} 
+%\usepackage{eucal} 	 	% Euler fonts
+%\usepackage{epsfig}    % Allows inclusion of eps files.
+%\usepackage{citesort}   % 
+
+\usepackage{url} 		% Allows good typesetting of web URLs.
+
+\usepackage{latexsym}
+%\usepackage{graphics}
+%\usepackage{epstopdf}
+%\usepackage{algorithmic}
+\usepackage{amssymb}
+\usepackage{booktabs, makecell}
+%\usepackage{bm}
+%\usepackage[section]{placeins}
+\usepackage{xfp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[referable]{threeparttablex}
+\usepackage{footnote}
+%\usepackage{cite} %% Had to comment out to prevent error
+%\usepackage{siamcleveref}       %
+
+%----------------------------------%
+% Need the following for Wordcloud %
+%----------------------------------%
+\usepackage{graphicx}         	% Allows inclusion of eps files.
+\usepackage{tikz}
+\usepackage{tikzscale}
+\usepackage[percent]{overpic}
+\usetikzlibrary{calc}
+\usetikzlibrary{3d}
+\usepackage{wrapfig}
+\usepackage[utf8]{inputenc}
+\usepackage{anyfontsize}
+\DeclareGraphicsExtensions{.tikz,.pdf} %.eps,.png,.jpg,
+
+%----------------------------------------------------------------%
+% Packages borrowed from (MIT licensed) github.com/sb2nov/resume %
+%----------------------------------------------------------------%
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+%\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%-----------------------------------------------------------------%
+
