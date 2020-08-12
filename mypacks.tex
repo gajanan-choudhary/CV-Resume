@@ -12,7 +12,9 @@
 \usepackage{cmap}  % For fixing copy pasting ligatures - ff, fi, fl, ffl, etc.
 %Partially deal with overfull hbox / vbox
 \usepackage[T1]{fontenc}
-%\usepackage[final]{microtype}
+\usepackage[final]{microtype}
+\usepackage{lmodern}
+%\usepackage{ebgaramond}
 
 % Some packages to write mathematics.
 %\usepackage{amsmath,amsthm,amsfonts,amscd} 
@@ -30,7 +32,8 @@
 \usepackage{booktabs, makecell}
 %\usepackage{bm}
 %\usepackage[section]{placeins}
-\usepackage{xfp}
+%\usepackage{xfp}
+\usepackage{enumitem}  % For indentation of bullets
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[referable]{threeparttablex}
@@ -50,7 +53,11 @@
 \usepackage{wrapfig}
 \usepackage[utf8]{inputenc}
 \usepackage{anyfontsize}
+%\usepackage[export]{adjustbox} % Bounding box on figure
 \DeclareGraphicsExtensions{.tikz,.pdf} %.eps,.png,.jpg,
+
+\usepackage{contour}
+\usepackage{ulem}
 
 %----------------------------------------------------------------%
 % Packages borrowed from (MIT licensed) github.com/sb2nov/resume %

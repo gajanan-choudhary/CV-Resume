@@ -8,35 +8,93 @@
 % Edit the following -- Put your details below %
 %----------------------------------------------%
 
-\newcommand{\Author}{Gajanan Choudhary}
-\newcommand{\AuthorEmail}{gajanan@utexas.edu}
-\newcommand{\AuthorPhone}{(512) 657-3030}
+\def\Author{Gajanan Choudhary}
+\def\AuthorEmail{gajanan@utexas.edu}
+\def\AuthorAddress{3352 Lake Austin Blvd, Austin, TX 78703}
+\def\AuthorPhoneText{\smallplus{}1 (512) 657-3030}
+\def\AuthorPhoneLink{tel:15126573030}
 
 % You need to escape special characters in website link.
 % See: https://stackoverflow.com/questions/2894710/how-to-write-urls-in-latex
-\newcommand{\AuthorWebsiteText}{https://users.oden.utexas.edu/$\smallsim$gajanan/}
-\newcommand{\AuthorWebsiteLink}{https://users.oden.utexas.edu/~gajanan/}
+\def\AuthorWebsiteText{https://users.oden.utexas.edu/$\smallsim$gajanan/}
+\def\AuthorWebsiteLink{https://users.oden.utexas.edu/~gajanan/}
+
+%%%----------------------------------------------------------%%%
+%%%----------------------------------------------------------%%%
+%%% Most likely, you will not need to edit things below this %%%
+%%%----------------------------------------------------------%%%
+%%%----------------------------------------------------------%%%
 
 %------------------%
 % Utility commands %
 %------------------%
+
+%---------------------%
+% Use sans-serif font %
+%---------------------%
+%\renewcommand{\familydefault}{\sfdefault}
+
+%--------------%
+% Line spacing %
+%--------------%
+\linespread{1.2}
+
+%-------%
+% Dates %
+%-------%
 \newcommand{\dates}[2]{#1 -- #2}
 
-%--------------------------------------------------------------%
-% Wordcloud colors
-\definecolor{utorange}{RGB}{191, 87, 0}
-\definecolor{utgray}{RGB}{51, 63, 72}
+%---------------------------%
+% For underlining hyperlink %
+%---------------------------%
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
 
-%--------------------------------------------------------------%
-% Need a prettier way to write "C++"
+%-----------%
+% Wordcloud %
+%-----------%
+\definecolor{uto}{RGB}{191, 87, 0}
+\definecolor{utg}{RGB}{51, 63, 72}
+
+% The following is needed for properly scaling text in the wordcloud. See:
+% https://tex.stackexchange.com/questions/328228/appearance-of-tiny-or-scriptsize-fontsize-in-latex-horizontal-stretch/328237
+%%% TEXT FONT FIX
+\rmfamily
+\DeclareFontShape{T1}{lmr}{bx}{sc}{<-> cmr10}{}% USE BOLD SCSHAPE NOT OTHERWISE DEFINED
+%%% MATH FONT FIX
+\DeclareFontFamily{OML}{zlmm}{}
+\DeclareFontShape{OML}{zlmm}{m}{it}{<-> lmmi10}{}
+\DeclareFontShape{OML}{zlmm}{b}{it}{<->ssub * zlmm/m/it}{}
+\DeclareFontShape{OML}{zlmm}{bx}{it}{<->ssub * zlmm/m/it}{}
+
+\DeclareMathVersion{Tinyb}
+\SetSymbolFont{operators}{Tinyb}{T1}{lmr}{bx}{sc}
+\SetSymbolFont{letters}{Tinyb}{OML}{zlmm}{m}{it}
+%%%
+\newenvironment{tinyb}{\bgroup\tiny\bfseries\scshape\mathversion{Tinyb}}{\egroup} % edit: now with \tiny included
+
+
+%---------------%
+% Writing "C++" %
+%---------------%
 % See: https://tex.stackexchange.com/questions/4302/prettiest-way-to-typeset-c-cplusplus
 \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+\def\bigCC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\normalsize\bf ++}}}
 
-%--------------------------------------------------------------%
-% Need a smaller "~" symbol w.r.t. surrounding font.
+%---------------------%
+% Writing smaller "~" %
+%---------------------%
+\def\smallplus{\nolinebreak[2]\raisebox{.4ex}{\tiny\bf +}}
+
+%---------------------%
+% Writing smaller "~" %
+%---------------------%
 % Following taken from:
 % https://tex.stackexchange.com/questions/306079/how-to-generate-a-smaller-sim-with-respect-to-text
-
 \makeatletter
 \newcommand{\smallsym}[2]{#1{\mathpalette\make@small@sym{#2}}}
 \newcommand{\make@small@sym}[2]{%
@@ -55,14 +113,11 @@
 %--------------------------------------------------------------%
 
 
-%----------------------------------------------------------%
-% Most likely, you will not need to edit things below this %
-%----------------------------------------------------------%
-
 %---------------------------------------------------------------------------%
 % Utility commands -- Borrowed from (MIT licensed) github.com/sb2nov/resume %
 % Note: I have modified a few things after borrowing.                       %
 %---------------------------------------------------------------------------%
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -85,15 +140,16 @@
 %---------------------------------------------------------------------------%
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-15pt}\scshape\raggedright\large
-}{}{0em}{\color{gray}\titlerule[0.5pt]\color{black}\\}[\vspace{-6pt}]
+  \vspace{-19pt}\scshape\raggedright\large
+}{}{0em}{\vspace{-4pt}\color{gray}\titlerule[0.5pt]\color{black}\\}[\vspace{-6pt}]
+%}{}{0em}{\color{gray}\rule{\linewidth}{0.5pt}\color{black}\\}[\vspace{-6pt}]
 
 
 %---------------------------------------------------------------------------%
 %---- gkc Modifying ----%
 %\newcommand{\resumeSubheading}[4]{  % Original
 \newcommand{\resumeSubheading}[2]{
-  \vspace{-3pt}\item
+  \vspace{-4pt}\item
     \begin{tabularx}{\linewidth}[t]{Xr}
       \textbf{#1} & #2 \\
     \end{tabularx}\vspace{-13pt}
@@ -102,30 +158,39 @@
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-3pt}
     \begin{tabularx}{\linewidth}{Xr}
-      \textit{#1} & \textit{#2} \\
+      #1 & #2 \\
     \end{tabularx}\vspace{-13pt}
 }
 
 %---------------------------------------------------------------------------%
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    {#1}{: #2 \vspace{-3pt}}
+  \item{
+    {#1}{: #2 \vspace{-2.5pt}}
   }
 }
 \newcommand{\resumeSubItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-7pt}}
+  \item{
+
+    \textbf{#1}{: #2 \vspace{-7pt}} 
+%    \textbf{#1}{: #2 \vspace{-9pt}}  % Use this if 11pt article
   }
 }
 
 %\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-\renewcommand{\labelitemii}{\small{$\circ$}}
+%---------------------------------------------------------------------------%
+% Bullet size and type
+\renewcommand{\labelitemi}{\raisebox{1pt}{\footnotesize{$\bullet$}}}
+\renewcommand{\labelitemii}{\raisebox{1pt}{\footnotesize{$\circ$}}}
 
 %---------------------------------------------------------------------------%
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.225in]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 %---------------------------------------------------------------------------%
-\newcommand{\resumeItemListStart}{\vspace{-7pt}\begin{itemize}}
+\newcommand{\resumeSubItemListStart}{\vspace{-2pt}\begin{itemize}[leftmargin=0.225in]}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+%---------------------------------------------------------------------------%
+\newcommand{\resumeItemListStart}{\vspace{-7pt}\begin{itemize}[leftmargin=0.225in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
