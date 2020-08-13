@@ -14,7 +14,8 @@
 %-----------------------------%
 % Customize your resume below %
 %-----------------------------%
-\href{\AuthorWebsiteLink}{\scshape\huge\Author}\vspace{2pt}
+{\scshape\huge\Author}\vspace{2pt}
+%\href{\AuthorWebsiteLink}{\scshape\huge\Author}\vspace{2pt}
 
 \begin{small}
   %Website: \href{\AuthorWebsiteLink}{\color[HTML]{0f4cb4}\myuline{\smash{\AuthorWebsiteText}}}
@@ -26,66 +27,130 @@
   \href{\AuthorPhoneLink}{\AuthorPhoneText}
 \end{small}
 
+%------------------------------------SUMMARY-----------------------------------%
+\section{Summary}
+Computational scientist with 8 years of interdisciplinary research and
+test-driven scientific software development experience through 15\smallplus{}
+projects spanning high-performance computing (HPC), object-oriented programming,
+applied mathematics, numerical methods, computational mechanics, optimization,
+and machine learning. Expert in coupling scientific software and mixed-language
+programming with C/\CC{}, Fortran, and Python.
+% \\[1\baselineskip] added above since \parbox{0.546\linewidth}{\section{Summary}}
+% messes up line spacing in the new section causing overlapping lines.
+
+%------------------------------PROGRAMMING SKILLS------------------------------%
+\section{Skills}
+  \resumeSubItemListStart
+    \resumeSubItem{Programming}{C/\CC{}, Fortran, Python, MATLAB, Bash, MPI,
+                               OpenMP, f2py, SWIG, and Python/C API}
+    \resumeSubItem{Tools}{Git, GitHub, Travis CI, CircleCI, Docker, Coveralls,
+                         CMake, Make, Gcov, LCOV, Doxygen, and \LaTeX{}}
+    \resumeSubItem{Engineering}{AdH, ADCIRC, GSSHA, Aquaveo SMS/WMS,
+                                ANSYS, Abaqus, ParaView, and AutoCAD}
+  \resumeSubItemListEnd
 
 %------------------------------------HEADING-----------------------------------%
 %\setlength{\columnsep}{0pt}%
-\vspace{-82pt}
-\begin{wrapfigure}[2]{R}{0pt} %{-3cm}
+\vspace{-248.6pt}
+%%\vspace{-162pt}
+%\vspace{-82pt}
+%\vspace{-168.25pt}
+
+\begin{wrapfigure}[-20]{R}{0pt} %{-3cm}
+
   \centering
-  %\includegraphics[width=0.33\linewidth]{wordcloud}
-  %\begin{tikzpicture}[xscale=1, yscale=2, y=-1cm]
-  %\begin{tikzpicture}[y=-1cm, every node/.style={right}]
+
   \begin{tikzpicture}[x=1in, y=-1in, every node/.style={right}] 
-    %\node[color=uto]at (0.05,0.74){\scshape\huge Computational Scientist};
-    \node[color=uto]at (0.10,0.74){\huge Computational Scientist\space };
+
     \begin{tinyb}
-      %\node[color=uto]at (0.20,0.74){\huge Computational Scientist\space };
-      \node[color=utg]at (1.36,0.61){\small Fortran\space };
-      \node[color=utg]at (2.26,0.61){\scriptsize ERDC\space };
-      \node[color=utg]at (2.20,0.12){\footnotesize OpenMP\space };
-      \node[color=uto]at (1.24,0.14){\footnotesize Image Processing\space };
-      \node[color=uto]at (0.75,0.19){\normalsize Docker\space };
-      \node[color=utg]at (2.16,0.32){\small Travis CI\space };
-      \node[color=utg]at (1.66,0.32){\footnotesize Coveralls\space };
-      \node[color=uto]at (1.99,0.23){\scriptsize Make\space };
-      \node[color=uto]at (2.39,0.21){\scriptsize UT Austin\space };
-      \node[color=uto]at (1.07,0.35){\large GitHub\space };
-      \node[color=utg]at (1.51,0.22){\tiny STAAD Pro\space };
-      \node[color=utg]at (0.17,0.34){\Large Python\space };
-      \node[color=uto]at (0.57,0.25){\tiny CSS\space };
-      \node[color=uto]at (0.38,0.45){\scriptsize Matplotlib\space };
-      \node[color=utg]at (0.85,0.43){\footnotesize Bash\space };
+
       \node[color=uto]at (0.26,0.13){\footnotesize ANSYS\space };
       
-      \node[color=utg]at (2.49,0.42){\tiny AutoCAD\space };
-      \node[color=uto]at (1.93,0.48){\normalsize Finite Elements\space };
-      
-      \node[color=utg]at (1.15,0.50){\scriptsize SVN\space };
-      \node[color=uto]at (0.79,0.57){\footnotesize ctypes\space };
+      \node[color=uto]at (0.57,0.25){\tiny CSS\space };
+
+      \node[color=utg]at (0.17,0.34){\Large Python\space };
+
+      \node[color=uto]at (0.38,0.45){\scriptsize Matplotlib\space };
+
       \node[color=utg]at (0.42,0.58){\normalsize MPI\space };
+
+      \node[color=uto]at (0.29,0.88){\footnotesize Abaqus\space };
+
+      \node[color=utg]at (0.12,1.03){\footnotesize SWIG\space };
+
+      \node[color=uto]at (0.16,1.18){\small CMake\space };
+
+      \node[color=uto]at (0.75,0.19){\normalsize Docker\space };
+
+      \node[color=utg]at (0.85,0.43){\footnotesize Bash\space };
+
+      \node[color=uto]at (0.79,0.57){\footnotesize ctypes\space };
+
       \node[color=utg]at (0.77,0.89){\footnotesize IIT Kharagpur\space };
+
+      \node[color=uto]at (0.50,1.03){\large CircleCI\space };
+
+      \node[color=utg]at (0.65,1.17){\normalsize Neural Networks\space };
+
+      \node[color=uto]at (1.24,0.14){\footnotesize Image Processing\space };
+
+      \node[color=uto]at (1.07,0.35){\large GitHub\space };
+
+      \node[color=utg]at (1.15,0.50){\scriptsize SVN\space };
+
+      \node[color=uto]at (1.18,1.01){\footnotesize MATLAB\space };
+
+      \node[color=uto]at (1.31,1.11){\tiny HTML\space };
+
+      \node[color=utg]at (1.51,0.22){\tiny STAAD Pro\space };
+
+      \node[color=utg]at (1.66,0.32){\footnotesize Coveralls\space };
+
       \node[color=uto]at (1.43,0.48){\footnotesize ADCIRC\space };
+
+      \node[color=utg]at (1.36,0.61){\small Fortran\space };
+
       \node[color=uto]at (1.70,0.92){\normalsize AdH\space };
       
-      \node[color=uto]at (0.31,0.88){\footnotesize Abaqus\space };
-      \node[color=utg]at (0.12,1.03){\footnotesize SWIG\space };
-      
-      \node[color=uto]at (0.50,1.03){\large CircleCI\space };
-      \node[color=utg]at (0.65,1.17){\normalsize Neural Networks\space };
-      \node[color=uto]at (1.31,1.11){\tiny HTML\space };
-      \node[color=utg]at (2.05,1.03){\huge C/\bigCC{}\space };
-      \node[color=uto]at (2.65,0.90){\scriptsize Git\space };
-      \node[color=uto]at (0.16,1.18){\small CMake\space };
-      \node[color=uto]at (2.40,1.19){\scriptsize SMS/WMS\space };
-      \node[color=uto]at (1.76,1.18){\scriptsize ParaView\space };
       \node[color=utg]at (1.73,1.06){\small f2py\space };
-      \node[color=uto]at (1.18,1.01){\footnotesize MATLAB\space };
-      \draw[color=gray] (current bounding box.north east) -- (current bounding box.north west) -- (current bounding box.south west) -- (current bounding box.south east) -- cycle;
+
+      \node[color=uto]at (1.76,1.18){\scriptsize ParaView\space };
+
+      \node[color=uto]at (1.99,0.23){\scriptsize Make\space };
+
+      \node[color=uto]at (1.93,0.48){\normalsize Finite Elements\space };
+
+      \node[color=utg]at (2.05,1.03){\huge C/\bigCC{}\space };
+
+      \node[color=utg]at (2.20,0.12){\footnotesize OpenMP\space };
+
+      \node[color=uto]at (2.39,0.21){\scriptsize UT Austin\space };
+
+      \node[color=utg]at (2.16,0.32){\small Travis CI\space };
+
+      \node[color=utg]at (2.49,0.42){\tiny AutoCAD\space };
+
+      \node[color=utg]at (2.26,0.61){\scriptsize ERDC\space };
+
+      \node[color=uto]at (2.65,0.90){\scriptsize Git\space };
+
+      \node[color=uto]at (2.40,1.19){\scriptsize SMS/WMS\space };
+
     \end{tinyb}
+
+    \node[color=uto]at (0.10,0.74){\huge Computational Scientist\space };
+
+    \draw[color=gray] (current bounding box.north east) -- (current bounding box.north west) -- (current bounding box.south west) -- (current bounding box.south east) -- cycle;
+
   \end{tikzpicture}
+
 \end{wrapfigure}
+
 \strut{} %% For ending wrapfig wrapping properly
-\vspace{68pt}
+
+%\vspace{68pt}
+%\vspace{164pt}
+\vspace{239pt}
 
 % Following needed since wordcloud messes up wrapping the \hrule lines
 
@@ -108,29 +173,8 @@
 %    \end{small}
 %  %\end{center}
 
-%------------------------------------SUMMARY-----------------------------------%
-\section{Summary}
+
 \vspace{-2pt}
-Computational scientist with 8 years of interdisciplinary research and
-test-driven scientific software development experience through 15\smallplus{}
-projects spanning high-performance computing (HPC), object-oriented programming,
-applied mathematics, numerical methods, computational mechanics, optimization,
-and machine learning. Expert in scientific software coupling and mixed-language
-programming with C/\CC{}, Fortran, and Python.
-% \\[1\baselineskip] added above since \parbox{0.546\linewidth}{\section{Summary}}
-% messes up line spacing in the new section causing overlapping lines.
-
-%------------------------------PROGRAMMING SKILLS------------------------------%
-\section{Skills}
-  \resumeSubItemListStart
-    \resumeSubItem{Programming}{C/\CC{}, Fortran, Python, MATLAB, Bash, MPI,
-                               OpenMP, f2py, SWIG, and Python/C API}
-    \resumeSubItem{Tools}{Git, GitHub, Travis CI, CircleCI, Docker, Coveralls,
-                         CMake, Make, Gcov, LCOV, Doxygen, and \LaTeX{}}
-    \resumeSubItem{Engineering}{AdH, ADCIRC, GSSHA, Aquaveo SMS/WMS,
-                                ANSYS, Abaqus, ParaView, and AutoCAD}
-  \resumeSubItemListEnd
-
 %----------------------------------EXPERIENCE----------------------------------%
 \section{Experience}
   \resumeSubHeadingListStart
@@ -186,6 +230,7 @@ programming with C/\CC{}, Fortran, and Python.
           \resumeItem{Responsibilities}
             {Research on stress response of ship hulls to bending, shear,
             torsion, and warping loads}
+
           \resumeItem{Key contribution}
             {Developed a \textbf{MATLAB} software with a \textbf{GUI} for 2D
             modeling and stress analysis of ships}
@@ -222,7 +267,7 @@ programming with C/\CC{}, Fortran, and Python.
       {An \textbf{open-source Python} software for automating
       generation of Python/ctypes interfaces of C/\CC{} software for wrapping
       them in Python}
-    \resumeSubItem{IR-SECT}
+    \resumeSubItem{IR-Sect}
       {A \textbf{MATLAB} software with a graphical user interface (\textbf{GUI})
       for modeling 2D beam cross-sections that implements \textbf{graph
       algorithms} for calculating their sectorial properties to simplify stress
