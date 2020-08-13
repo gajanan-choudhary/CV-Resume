@@ -16,7 +16,7 @@
 
 % You need to escape special characters in website link.
 % See: https://stackoverflow.com/questions/2894710/how-to-write-urls-in-latex
-\def\AuthorWebsiteText{https://users.oden.utexas.edu/$\smallsim$gajanan/}
+\def\AuthorWebsiteText{https://users.oden.utexas.edu/\textasciitilde{}gajanan/}
 \def\AuthorWebsiteLink{https://users.oden.utexas.edu/~gajanan/}
 
 %%%----------------------------------------------------------%%%
@@ -83,35 +83,13 @@
 %---------------%
 % See: https://tex.stackexchange.com/questions/4302/prettiest-way-to-typeset-c-cplusplus
 \def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+% Needed for wordcloud:
 \def\bigCC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\normalsize\bf ++}}}
 
 %---------------------%
-% Writing smaller "~" %
+% Writing smaller "+" %
 %---------------------%
 \def\smallplus{\nolinebreak[2]\raisebox{.4ex}{\tiny\bf +}}
-
-%---------------------%
-% Writing smaller "~" %
-%---------------------%
-% Following taken from:
-% https://tex.stackexchange.com/questions/306079/how-to-generate-a-smaller-sim-with-respect-to-text
-\makeatletter
-\newcommand{\smallsym}[2]{#1{\mathpalette\make@small@sym{#2}}}
-\newcommand{\make@small@sym}[2]{%
-  \vcenter{\hbox{$\m@th\downgrade@style#1#2$}}%
-}
-\newcommand{\downgrade@style}[1]{%
-  \ifx#1\displaystyle\scriptstyle\else
-    \ifx#1\textstyle\scriptstyle\else
-      \scriptscriptstyle
-  \fi\fi
-}
-\makeatother
-
-% This allows the \smallsim command for \sim.
-\newcommand{\smallsim}{\smallsym{\mathrel}{\sim}}
-%--------------------------------------------------------------%
-
 
 %---------------------------------------------------------------------------%
 % Utility commands -- Borrowed from (MIT licensed) github.com/sb2nov/resume %

@@ -14,114 +14,122 @@
 %-----------------------------%
 % Customize your resume below %
 %-----------------------------%
+\href{\AuthorWebsiteLink}{\scshape\huge\Author}\vspace{2pt}
+
+\begin{small}
+  %Website: \href{\AuthorWebsiteLink}{\color[HTML]{0f4cb4}\myuline{\smash{\AuthorWebsiteText}}}
+  Website: \href{\AuthorWebsiteLink}{\AuthorWebsiteText}
+
+  \vspace{2pt}\AuthorAddress
+
+  \vspace{2pt}\href{mailto:\AuthorEmail}{\AuthorEmail} |
+  \href{\AuthorPhoneLink}{\AuthorPhoneText}
+\end{small}
+
 
 %------------------------------------HEADING-----------------------------------%
 %\setlength{\columnsep}{0pt}%
-\begin{wrapfigure}[6]{r}{0pt} %{-3cm}
+\vspace{-82pt}
+\begin{wrapfigure}[2]{R}{0pt} %{-3cm}
   \centering
   %\includegraphics[width=0.33\linewidth]{wordcloud}
   %\begin{tikzpicture}[xscale=1, yscale=2, y=-1cm]
-  %\vspace{-10pt}
   %\begin{tikzpicture}[y=-1cm, every node/.style={right}]
   \begin{tikzpicture}[x=1in, y=-1in, every node/.style={right}] 
     %\node[color=uto]at (0.05,0.74){\scshape\huge Computational Scientist};
-    \node[color=uto]at (0.10,0.74){\huge Computational Scientist};
+    \node[color=uto]at (0.10,0.74){\huge Computational Scientist\space };
     \begin{tinyb}
-      \node[color=utg]at (2.47,0.09){\scriptsize OpenMP};
-      \node[color=utg]at (1.53,0.08){\footnotesize ANSYS};
-      \node[color=uto]at (0.78,0.11){\tiny UT Austin};
-      \node[color=uto]at (1.69,0.20){\footnotesize Adaptive Hydraulics};
-      \node[color=uto]at (1.05,0.21){\footnotesize CMake};
-      \node[color=utg]at (0.25,0.25){\Large Python};
-      \node[color=utg]at (1.42,0.33){\tiny HTML/CSS};
-      \node[color=uto]at (2.52,0.33){\scriptsize Docker};
-      \node[color=uto]at (0.12,0.09){\tiny CircleCI};
-      \node[color=utg]at (0.91,0.34){\scriptsize Bash};
-      \node[color=uto]at (0.33,0.39){\scriptsize MATLAB};
-      \node[color=utg]at (1.97,0.48){\normalsize Finite Elements};
-      \node[color=utg]at (1.13,0.50){\scriptsize SVN};
-      \node[color=uto]at (0.77,0.54){\scriptsize ctypes};
-      \node[color=utg]at (1.40,0.61){\footnotesize Fortran};
-      \node[color=uto]at (2.31,0.61){\scriptsize SMS};
-      \node[color=utg]at (0.42,0.58){\normalsize MPI};
-      %\node[color=uto]at (0.20,0.74){\huge Computational Scientist};
-      \node[color=utg]at (0.83,0.86){\tiny IIT Kharagpur};
-      \node[color=uto]at (1.43,0.46){\tiny STAAD Pro};
-      \node[color=uto]at (1.69,0.90){\scriptsize ADCIRC};
-      \node[color=uto]at (2.75,0.90){\scriptsize Git};
-      \node[color=utg]at (0.31,0.97){\scriptsize Abaqus};
-      \node[color=uto]at (0.50,1.09){\footnotesize SWIG};
-      \node[color=uto]at (1.26,1.00){\footnotesize ParaView};
-      \node[color=utg]at (0.94,1.12){\tiny Travis CI};
-      \node[color=utg]at (2.25,1.03){\LARGE C/\bigCC{}};
-      \node[color=utg]at (1.71,1.12){\footnotesize GitHub};
-      \node[color=uto]at (0.13,1.18){\normalsize f2py};
-      \node[color=uto]at (2.62,1.18){\scriptsize ERDC};
-      \node[color=uto]at (1.60,1.23){\scriptsize Image Processing};
-      \node[color=utg]at (0.56,1.24){\scriptsize Neural Networks};
+      %\node[color=uto]at (0.20,0.74){\huge Computational Scientist\space };
+      \node[color=utg]at (1.36,0.61){\small Fortran\space };
+      \node[color=utg]at (2.26,0.61){\scriptsize ERDC\space };
+      \node[color=utg]at (2.20,0.12){\footnotesize OpenMP\space };
+      \node[color=uto]at (1.24,0.14){\footnotesize Image Processing\space };
+      \node[color=uto]at (0.75,0.19){\normalsize Docker\space };
+      \node[color=utg]at (2.16,0.32){\small Travis CI\space };
+      \node[color=utg]at (1.66,0.32){\footnotesize Coveralls\space };
+      \node[color=uto]at (1.99,0.23){\scriptsize Make\space };
+      \node[color=uto]at (2.39,0.21){\scriptsize UT Austin\space };
+      \node[color=uto]at (1.07,0.35){\large GitHub\space };
+      \node[color=utg]at (1.51,0.22){\tiny STAAD Pro\space };
+      \node[color=utg]at (0.17,0.34){\Large Python\space };
+      \node[color=uto]at (0.57,0.25){\tiny CSS\space };
+      \node[color=uto]at (0.38,0.45){\scriptsize Matplotlib\space };
+      \node[color=utg]at (0.85,0.43){\footnotesize Bash\space };
+      \node[color=uto]at (0.26,0.13){\footnotesize ANSYS\space };
+      
+      \node[color=utg]at (2.49,0.42){\tiny AutoCAD\space };
+      \node[color=uto]at (1.93,0.48){\normalsize Finite Elements\space };
+      
+      \node[color=utg]at (1.15,0.50){\scriptsize SVN\space };
+      \node[color=uto]at (0.79,0.57){\footnotesize ctypes\space };
+      \node[color=utg]at (0.42,0.58){\normalsize MPI\space };
+      \node[color=utg]at (0.77,0.89){\footnotesize IIT Kharagpur\space };
+      \node[color=uto]at (1.43,0.48){\footnotesize ADCIRC\space };
+      \node[color=uto]at (1.70,0.92){\normalsize AdH\space };
+      
+      \node[color=uto]at (0.31,0.88){\footnotesize Abaqus\space };
+      \node[color=utg]at (0.12,1.03){\footnotesize SWIG\space };
+      
+      \node[color=uto]at (0.50,1.03){\large CircleCI\space };
+      \node[color=utg]at (0.65,1.17){\normalsize Neural Networks\space };
+      \node[color=uto]at (1.31,1.11){\tiny HTML\space };
+      \node[color=utg]at (2.05,1.03){\huge C/\bigCC{}\space };
+      \node[color=uto]at (2.65,0.90){\scriptsize Git\space };
+      \node[color=uto]at (0.16,1.18){\small CMake\space };
+      \node[color=uto]at (2.40,1.19){\scriptsize SMS/WMS\space };
+      \node[color=uto]at (1.76,1.18){\scriptsize ParaView\space };
+      \node[color=utg]at (1.73,1.06){\small f2py\space };
+      \node[color=uto]at (1.18,1.01){\footnotesize MATLAB\space };
       \draw[color=gray] (current bounding box.north east) -- (current bounding box.north west) -- (current bounding box.south west) -- (current bounding box.south east) -- cycle;
     \end{tinyb}
   \end{tikzpicture}
 \end{wrapfigure}
 \strut{} %% For ending wrapfig wrapping properly
-\vspace{-4pt}
+\vspace{68pt}
 
 % Following needed since wordcloud messes up wrapping the \hrule lines
 
-%\parbox{0.99\linewidth}{
-  %\begin{center}
-      \href{\AuthorWebsiteLink}{\scshape\huge\Author}\vspace{2pt}
-  %\end{center}
-%}% End of: \parbox{0.546\linewidth}{
-
-  %\begin{center}
-    \begin{small}
-      %Website: \href{\AuthorWebsiteLink}{\color[HTML]{0f4cb4}\myuline{\smash{\AuthorWebsiteText}}}
-      Website: \href{\AuthorWebsiteLink}{\AuthorWebsiteText}
-
-      \vspace{2pt}\AuthorAddress
-
-      \vspace{2pt}\href{mailto:\AuthorEmail}{\AuthorEmail} |
-      \href{\AuthorPhoneLink}{\AuthorPhoneText}
-
-    \end{small}
-  %\end{center}
+%%\parbox{0.99\linewidth}{
+%  %\begin{center}
+%      \href{\AuthorWebsiteLink}{\scshape\huge\Author}\vspace{2pt}
+%  %\end{center}
+%%}% End of: \parbox{0.546\linewidth}{
+%
+%  %\begin{center}
+%    \begin{small}
+%      %Website: \href{\AuthorWebsiteLink}{\color[HTML]{0f4cb4}\myuline{\smash{\AuthorWebsiteText}}}
+%      Website: \href{\AuthorWebsiteLink}{\AuthorWebsiteText}
+%
+%      \vspace{2pt}\AuthorAddress
+%
+%      \vspace{2pt}\href{mailto:\AuthorEmail}{\AuthorEmail} |
+%      \href{\AuthorPhoneLink}{\AuthorPhoneText}
+%
+%    \end{small}
+%  %\end{center}
 
 %------------------------------------SUMMARY-----------------------------------%
 \section{Summary}
 \vspace{-2pt}
 Computational scientist with 8 years of interdisciplinary research and
-test-driven software development experience through 15\smallplus{} projects
-spanning scientific high-performance computing (HPC), computational mechanics,
-applied math, \& machine learning. Expert in software coupling
-and mixed-language programming with Python, C/\CC{}, \&
-Fortran.
+test-driven scientific software development experience through 15\smallplus{}
+projects spanning high-performance computing (HPC), object-oriented programming,
+applied mathematics, numerical methods, computational mechanics, optimization,
+and machine learning. Expert in scientific software coupling and mixed-language
+programming with C/\CC{}, Fortran, and Python.
 % \\[1\baselineskip] added above since \parbox{0.546\linewidth}{\section{Summary}}
 % messes up line spacing in the new section causing overlapping lines.
 
-%-----------------------------------EDUCATION----------------------------------%
-\section{Education}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {The University of Texas at Austin}{Austin, TX}
-
-      \resumeSubSubheading
-        {Ph.D. in Engineering Mechanics}{\dates{Aug '14}{Dec '19}}
-
-      \resumeSubSubheading
-        {Graduate Portfolio in Scientific Computing}{\dates{Aug '14}{May '18}}
-
-      \resumeSubSubheading
-        {M.S. in Engineering Mechanics}{\dates{Aug '14}{May '17}}
-
-    \resumeSubheading
-      {Indian Institute of Technology (IIT) Kharagpur}{Kharagpur, India}
-
-      \resumeSubSubheading
-        {B.Tech. in Civil Engineering}{\dates{Jul '09}{Jul '13}}
-
-  \resumeSubHeadingListEnd
+%------------------------------PROGRAMMING SKILLS------------------------------%
+\section{Skills}
+  \resumeSubItemListStart
+    \resumeSubItem{Programming}{C/\CC{}, Fortran, Python, MATLAB, Bash, MPI,
+                               OpenMP, f2py, SWIG, and Python/C API}
+    \resumeSubItem{Tools}{Git, GitHub, Travis CI, CircleCI, Docker, Coveralls,
+                         CMake, Make, Gcov, LCOV, Doxygen, and \LaTeX{}}
+    \resumeSubItem{Engineering}{AdH, ADCIRC, GSSHA, Aquaveo SMS/WMS,
+                                ANSYS, Abaqus, ParaView, and AutoCAD}
+  \resumeSubItemListEnd
 
 %----------------------------------EXPERIENCE----------------------------------%
 \section{Experience}
@@ -133,14 +141,14 @@ Fortran.
 
       %------------------------------Title 1-----------------------------------%
       \resumeSubSubheading
-        {\textbf{Postdoctoral Fellow}}{\dates{Oct '19}{Present}}
+        {\textbf{Postdoctoral Fellow}}{\dates{October 2019}{Present}}
         \resumeItemListStart
           \resumeItem{Responsibilities}
-            {Software development and research on multi-software CFD model
-            coupling}
+            {Open-source parallel software development for research on coupled
+            fluid dynamics models}
           \resumeItem{Key contribution}
-            {Coupled groundwater and diffusive wave models in the \textbf{C}
-            software, Adaptive Hydraulics (AdH), and developed a \textbf{Python}
+            {Coupled diffusive wave and groundwater models in the \textbf{C}
+            software, Adaptive Hydraulics (AdH), and created a \textbf{Python}
             HPC interface for the \textbf{Fortran} software, ADvanced
             CIRCulation (ADCIRC)}
             %{Developed a \textbf{Python} HPC interface for the \textbf{Fortran}
@@ -151,30 +159,36 @@ Fortran.
 
       %------------------------------Title 2-----------------------------------%
       \resumeSubSubheading
-       {\textbf{Graduate Research Assistant}}{\dates{Sep '14}{Oct '19}}
+       {\textbf{Graduate Research Assistant}}{\dates{September 2014}{October 2019}}
        \resumeItemListStart
           \resumeItem{Responsibilities}
-            {Software development and research on multi-software CFD model
-            coupling}
+            {Software and library development for research on coupled
+            fluid dynamics models}
           \resumeItem{Key contribution}
-            {Developed \textbf{Python} HPC interfaces of and coupled
-            \textbf{\CC{}} software, Gridded Surface Subsurface Hydrologic
-            Analysis (GSSHA) and AdH}
+            {Coupled the \textbf{\CC{}} software, Gridded Surface Subsurface
+            Hydrologic Analysis (GSSHA), with \textbf{C}-based AdH by
+            designing, implementing, testing, validating, and coupling their
+            \textbf{Python} interfaces}
+            %{Designed, implemented, tested, and validated \textbf{Python} HPC
+            %interfaces of \textbf{\CC{}} software, Gridded Surface Subsurface
+            %Hydrologic Analysis (GSSHA), and the \textbf{C} software, AdH, and
+            %coupled them}
        \resumeItemListEnd
 
     %---------------------------------Job 2------------------------------------%
     \resumeSubheading
-      {\textbf{Indian Register of Shipping}}{Mumbai, India}
+      {Indian Register of Shipping}{Mumbai, India}
 
       %------------------------------Title 1-----------------------------------%
       \resumeSubSubheading
-        {\textbf{Assistant Surveyor}}{\dates{Jul '13}{Jul '14}}
+        {\textbf{Assistant Surveyor}}{\dates{July 2013}{July 2014}}
         \resumeItemListStart
           \resumeItem{Responsibilities}
-            {Research on stress response of ship hulls to external loads}
+            {Research on stress response of ship hulls to bending, shear,
+            torsion, and warping loads}
           \resumeItem{Key contribution}
-            {Developed a \textbf{MATLAB} software for modeling and analyzing
-            stress response of ship hulls}
+            {Developed a \textbf{MATLAB} software with a \textbf{GUI} for 2D
+            modeling and stress analysis of ships}
         \resumeItemListEnd
 
     %%---------------------------------Job 3------------------------------------%
@@ -183,11 +197,11 @@ Fortran.
 
     %  %------------------------------Title 1-----------------------------------%
     %  \resumeSubSubheading
-    %    {\textbf{Intern, Structural Design}}{\dates{May '12}{Jul '12}}
+    %    {\textbf{Intern, Structural Design}}{\dates{May 2012}{July 2012}}
 
     %  %------------------------------Title 2-----------------------------------%
     %  \resumeSubSubheading
-    %    {\textbf{Intern, Draftsman}}{\dates{May '10}{Jun '10}}
+    %    {\textbf{Intern, Draftsman}}{\dates{May 2010}{Jun 2010}}
     %    \resumeItemListStart
     %      \resumeItem{Responsibilities}
     %        {BLAH}
@@ -201,32 +215,46 @@ Fortran.
 \section{Key Projects}
   \resumeSubItemListStart
     \resumeSubItem{Water Coupler}
-      {A \textbf{Python HPC software} for coupling multiple CFD
-      models written in \textbf{C} (AdH), \textbf{\CC{}} (GSSHA), and
-      \textbf{Fortran} (ADCIRC)}
+      {A \textbf{Python} HPC software for coupling multiple computational fluid
+      dynamics models written in \textbf{C} (AdH), \textbf{\CC{}} (GSSHA), and
+      \textbf{Fortran} (ADCIRC) for simulating compound floods due to hurricanes}
     \resumeSubItem{\href{https://github.com/gajanan-choudhary/htopy}{htopy}}
-      {An \textbf{open-source} Python software for automating
+      {An \textbf{open-source Python} software for automating
       generation of Python/ctypes interfaces of C/\CC{} software for wrapping
       them in Python}
-    \resumeSubItem{IR-Sect}
-      {A \textbf{MATLAB} software with a \textbf{GUI} for modeling 2D
-      ship hull cross-sections and analyzing their stress and displacement
-      responses to bending, shear, torsion, and warping loads}
+    \resumeSubItem{IR-SECT}
+      {A \textbf{MATLAB} software with a graphical user interface (\textbf{GUI})
+      for modeling 2D beam cross-sections that implements \textbf{graph
+      algorithms} for calculating their sectorial properties to simplify stress
+      analysis}
     \resumeSubItem{Machine Learning}
-      {Used \textbf{neural networks} and \textbf{image processing} for detecting
+      {Used \textbf{image processing} and \textbf{neural networks} for detecting
       cracks in concrete surfaces}
   \resumeSubItemListEnd
 
-%------------------------------PROGRAMMING SKILLS------------------------------%
-\section{Software Skills}
-  \resumeSubItemListStart
-    \resumeSubItem{Programming}{C/\CC{}, Fortran, Python, MATLAB, Bash, MPI,
-                               OpenMP, f2py, SWIG, and Python/C API}
-    \resumeSubItem{Tools}{Git, GitHub, Travis CI, CircleCI, Docker, CMake
-                         Gcov/LCOV, \LaTeX{}, Doxygen, HTML, and CSS}
-    \resumeSubItem{Engineering}{AdH, ADCIRC, GSSHA, Aquaveo SMS/WMS, FEniCS,
-                                ANSYS, Abaqus, and ParaView}
-  \resumeSubItemListEnd
+%-----------------------------------EDUCATION----------------------------------%
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {The University of Texas at Austin}{Austin, TX}
+
+      \resumeSubSubheading
+        {Ph.D. in Engineering Mechanics}{\dates{Aug 2014}{Dec 2019}}
+
+      \resumeSubSubheading
+        {Graduate Portfolio in Scientific Computing}{\dates{Aug 2014}{May 2018}}
+
+      \resumeSubSubheading
+        {M.S. in Engineering Mechanics}{\dates{Aug 2014}{May 2017}}
+
+    \resumeSubheading
+      {Indian Institute of Technology (IIT) Kharagpur}{Kharagpur, India}
+
+      \resumeSubSubheading
+        {B.Tech. in Civil Engineering}{\dates{Jul 2009}{Jul 2013}}
+
+  \resumeSubHeadingListEnd
 
 %----------------------------------ACTIVITIES----------------------------------%
 %\section{Certifications/Activities}
