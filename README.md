@@ -2,7 +2,7 @@
 
 Address: Lake Austin Blvd., Austin, TX 78703
 
-Phone: +1 (512) 657-3030
+Phone: (512) 657-3030
 
 E-mail: gajanan@utexas.edu
 
@@ -106,21 +106,30 @@ Pune, India, May 2012 - July 2012.
 
 
 ## Education
-* The University of Texas at Austin, Austin, TX,
-  Doctorate (PhD), Engineering Mechanics, GPA 3.92,
-  August 2014 - December 2019.
+* The University of Texas at Austin,
+  Austin, TX,
+  August 2014 - December 2019,
+  Doctorate (Ph.D.) in Engineering Mechanics,
+  GPA: 3.92.
 
-* The University of Texas at Austin, Austin, TX,
-  Graduate Portfolio, Scientific Computing, GPA 4.00,
-  August 2014 - May 2018.
+* The University of Texas at Austin,
+  Austin, TX,
+  August 2014 - May 2018,
+  Graduate Portfolio in Scientific Computing,
+  GPA: 4.00.
 
-* The University of Texas at Austin, Austin, TX,
-  Master of Science (MS), Engineering Mechanics, GPA 3.89,
-  August 2014 - May 2017.
 
-* Indian Institute of Technology (IIT) Kharagpur, Kharagpur, India,
-  Bachelor of Technology (BTech), Civil Engineering, GPA 8.23/10,
-  July 2009 - July 2013.
+* The University of Texas at Austin,
+  Austin, TX,
+  August 2014 - May 2017,
+  Master of Science (M.S.) in Engineering Mechanics,
+  GPA: 3.89.
+
+* Indian Institute of Technology (IIT) Kharagpur,
+  Kharagpur, India,
+  July 2009 - July 2013,
+  Bachelor of Technology (B.Tech.) in Civil Engineering,
+  GPA: 8.23/10.
 
 
 ## Projects
