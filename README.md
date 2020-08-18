@@ -118,7 +118,6 @@ Pune, India, May 2012 - July 2012.
   Graduate Portfolio in Scientific Computing,
   GPA: 4.00.
 
-
 * The University of Texas at Austin,
   Austin, TX,
   August 2014 - May 2017,
