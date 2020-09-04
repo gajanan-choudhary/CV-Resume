@@ -57,15 +57,18 @@
 \DeclareGraphicsExtensions{.tikz,.pdf} %.eps,.png,.jpg,
 
 \usepackage{contour}
-\usepackage{ulem}
+\usepackage[normalem]{ulem}
 
-%\usepackage{csquotes}             % idk, babel/biber like it
-%\usepackage[style=apa,
-%backend=biber,
-%sortcites=true,
-%sorting=ydmdnt,
-%language=american]{biblatex}      % for reference sections
-%
+\newcommand{\recentyear}{1900} 
+\usepackage[american]{babel}
+\usepackage{csquotes}             % idk, babel/biber like it
+\usepackage[style=apa,
+            apamaxprtauth=99
+            backend=biber,
+            sortcites=true,
+            sorting=ydmdnt,
+            language=american]{biblatex}      % for reference sections
+\addbibresource{CV.bib}
 
 %----------------------------------------------------------------%
 % Packages borrowed from (MIT licensed) github.com/sb2nov/resume %
@@ -78,7 +81,7 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
+%\usepackage[english]{babel}
 \usepackage{tabularx}
 %-----------------------------------------------------------------%
 

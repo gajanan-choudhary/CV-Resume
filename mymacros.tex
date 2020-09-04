@@ -47,12 +47,12 @@
 %---------------------------%
 % For underlining hyperlink %
 %---------------------------%
-\renewcommand{\ULdepth}{1.8pt}
-\contourlength{0.8pt}
-\newcommand{\myuline}[1]{%
-  \uline{\phantom{#1}}%
-  \llap{\contour{white}{#1}}%
-}
+%\renewcommand{\ULdepth}{1.8pt}
+%\contourlength{0.8pt}
+%\newcommand{\myuline}[1]{%
+%  \uline{\phantom{#1}}%
+%  \llap{\contour{white}{#1}}%
+%}
 
 %-----------%
 % Wordcloud %
@@ -174,4 +174,120 @@
 %---------------------------------------------------------------------------%
 \newcommand{\resumeItemListStart}{\vspace{-7pt}\begin{itemize}[leftmargin=0.225in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
+
+%---------------------------------------------------------------------------%
+% Borrowed from:
+%     https://github.com/btskinner/tex_cv
+% If you want to go the partially manual route, look at another repo:
+%     https://github.com/rgeirhos/academic-cv-publications
+
+% ------------------------%
+% BibLaTeX sorting scheme %
+% ------------------------%
+
+% Create a new sorting scheme that will sort in reverse chronological
+% order, taking months into account correctly (i.e., in chronological
+% order and not alphabetical order)
+
+\DeclareSortingScheme{ydmdnt}{
+  \sort{
+    \field{presort}
+  }
+  \sort[final]{
+    \field{sortkey}
+  }
+  \sort[direction=descending]{
+    \field{sortyear}
+    \field{year}
+    \literal{9999}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{month}
+    \literal{99}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=2,padchar=0]{day}
+    \literal{99}
+  }
+  \sort{
+    \field{sortname}
+    \field{author}
+    \field{editor}
+    \field{translator}
+    \field{sorttitle}
+    \field{title}
+  }
+  \sort{
+    \field{sorttitle}
+  }
+  \sort[direction=descending]{
+    \field[padside=left,padwidth=4,padchar=0]{volume}
+    \literal{9999}
+  }
+}
+
+%------------------%
+% BibLaTeX options %
+%------------------%
+
+% language mapping
+\DeclareLanguageMapping{american}{american-apa}
+
+% ignore addendum and note fields that are sometimes useful, but not here
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=addendum, null]
+      \step[fieldset=note, null]
+    } 
+  }
+}
+
+% macro so titles are converted to doi, url, or isbn link (if available)
+% h\t https://tex.stackexchange.com/a/48409
+\ExecuteBibliographyOptions{doi=false,url=false,isbn=false}
+\newbibmacro{string+doiurlisbn}[1]{%
+  \iffieldundef{doi}{%
+    \iffieldundef{url}{%
+      \iffieldundef{isbn}{%
+        \iffieldundef{issn}{%
+          #1%
+        }{%
+          \href{http://books.google.com/books?vid=ISSN\thefield{issn}}{#1}%
+        }%
+      }{%
+        \href{http://books.google.com/books?vid=ISBN\thefield{isbn}}{#1}%
+      }%
+    }{%
+      \href{\thefield{url}}{#1}%
+    }%
+  }{%
+    \href{http://dx.doi.org/\thefield{doi}}{#1}%
+  }%
+}
+
+\DeclareFieldFormat{title}{\usebibmacro{string+doiurlisbn}{\mkbibemph{#1}}}
+\DeclareFieldFormat[article,incollection]{title}%
+{\usebibmacro{string+doiurlisbn}{\mkbibquote{#1}}}
+
+% no letter for same year entries
+\defbibenvironment{mybib}
+{\list
+  {}
+  {\setlength{\leftmargin}{\bibhang}%
+    \setlength{\itemindent}{-\leftmargin}%
+    \setlength{\itemsep}{\bibitemsep}%
+    \setlength{\parsep}{\bibparsep}}}
+{\endlist}
+{\clearfield{extradate}\item}
+
+% filter by year (only print those after year value in \recentyear
+% macro above)
+\defbibcheck{recent}{
+  \iffieldint{year}
+  {\ifnumless{\thefield{year}}{\recentyear}
+    {\skipentry}
+    {}}
+  {\skipentry}
+}
 
