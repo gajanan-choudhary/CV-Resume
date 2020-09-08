@@ -24,22 +24,24 @@ major computational fluid dynamics HPC software.
 * Software development:
     - Programming: C/C++, Fortran, Python, MATLAB, Bash, MPI,
       OpenMP, f2py, SWIG, and Python/C API.
-    - Tools: Git, GitHub, Travis CI, CircleCI, Docker, Coveralls,
-      CMake, Make, Gcov, LCOV, Doxygen, and LaTeX.
+    - Tools: GitHub, Bitbucket, Git, Mercurial, SVN, Travis CI,
+      CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
+      Gcov, LCOV, GProf, Doxygen, LaTeX, HTML, and CSS.
     - Concepts: Data structures, algorithms, complexity,
       object-oriented programming (OOP), standard template
       library (STL), high-performance computing, parallel
       programming, general purpose GPU (GPGPU) programming,
       language interoperability, debugging, continuous
       integration and continuous delivery (CI/CD), and
-      test-driven development.
+      test-driven development (TDD).
 
-* Engineering:
-    - Fields: Computational mechanics, computational fluid
+* Research:
+    - Engineering: Computational mechanics, computational fluid
       dynamics (CFD), solid mechanics, structural dynamics,
       fluid-structure interaction (FSI), and coupled models.
     - Mathematics: Linear Algebra, functional analysis, partial
-      differential equations, numerical methods, optimization.
+      differential equations, numerical methods, and
+      optimization.
     - Applications: AdH, ADCIRC, GSSHA, Aquaveo SMS/WMS, ANSYS,
       Abaqus, ParaView, AutoCAD, and STAAD Pro.
 
@@ -291,5 +293,4 @@ Supervisors: Dr. N. Mitra and Dr. S. K. Barai.
 * Marathi: Native
 
 * Japanese: Elementary
-
 
