@@ -1,0 +1,20 @@
+name: Build LaTeX CV and Resume
+
+on: [push]
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up GitHub repository
+        uses: actions/checkout@v2
+
+      - name: Build LaTeX Resume
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: Resume.tex
+
+      - name: Build LaTeX CV
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: CV.tex
