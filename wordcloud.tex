@@ -1,0 +1,138 @@
+%--------------------------------%
+% Author     : Gajanan Choudhary %
+% License    : MIT               %
+% About file : LaTeX Resume      %
+%--------------------------------%
+
+%\documentclass[letterpaper,10pt]{article}
+%\documentclass[varwidth=true, border=10pt, convert={size=640x}]{standalone}
+\documentclass[crop, tikz, convert={size=1280x}, border=20pt]{standalone}
+
+%\include{mypacks}
+%\include{mymacros}
+
+\usepackage[T1]{fontenc}
+\usepackage[final]{microtype}
+\usepackage{lmodern}
+
+% The following is needed for properly scaling text in the wordcloud. See:
+% https://tex.stackexchange.com/questions/328228/appearance-of-tiny-or-scriptsize-fontsize-in-latex-horizontal-stretch/328237
+%%% TEXT FONT FIX
+\rmfamily
+\DeclareFontShape{T1}{lmr}{bx}{sc}{<-> cmr10}{}% USE BOLD SCSHAPE NOT OTHERWISE DEFINED
+%%% MATH FONT FIX
+\DeclareFontFamily{OML}{zlmm}{}
+\DeclareFontShape{OML}{zlmm}{m}{it}{<-> lmmi10}{}
+\DeclareFontShape{OML}{zlmm}{b}{it}{<->ssub * zlmm/m/it}{}
+\DeclareFontShape{OML}{zlmm}{bx}{it}{<->ssub * zlmm/m/it}{}
+
+\DeclareMathVersion{Tinyb}
+\SetSymbolFont{operators}{Tinyb}{T1}{lmr}{bx}{sc}
+\SetSymbolFont{letters}{Tinyb}{OML}{zlmm}{m}{it}
+%%%
+\newenvironment{tinyb}{\bgroup\tiny\bfseries\scshape\mathversion{Tinyb}}{\egroup} % edit: now with \tiny included
+
+
+% See: https://tex.stackexchange.com/questions/4302/prettiest-way-to-typeset-c-cplusplus
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+% Needed for wordcloud:
+\def\bigCC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\normalsize\bf ++}}}
+
+\definecolor{uto}{RGB}{191, 87, 0}
+\definecolor{utg}{RGB}{51, 63, 72}
+
+\begin{document}
+
+%--------------------------------%
+% Customize your wordcloud below %
+%--------------------------------%
+%\begin{figure}
+  \centering
+  \begin{tikzpicture}[x=1in, y=-1in, every node/.style={right}] 
+
+    \begin{tinyb}
+
+      \node[color=uto]at (0.26,0.13){\footnotesize ANSYS\space };
+      
+      \node[color=uto]at (0.57,0.25){\tiny CSS\space };
+
+      \node[color=utg]at (0.17,0.34){\Large Python\space };
+
+      \node[color=uto]at (0.38,0.45){\scriptsize Matplotlib\space };
+
+      \node[color=utg]at (0.42,0.58){\normalsize MPI\space };
+
+      \node[color=uto]at (0.29,0.88){\footnotesize Abaqus\space };
+
+      \node[color=utg]at (0.12,1.03){\footnotesize SWIG\space };
+
+      \node[color=uto]at (0.16,1.18){\small CMake\space };
+
+      \node[color=uto]at (0.75,0.19){\normalsize Docker\space };
+
+      \node[color=utg]at (0.85,0.43){\footnotesize Bash\space };
+
+      \node[color=uto]at (0.79,0.57){\footnotesize ctypes\space };
+
+      \node[color=utg]at (0.77,0.89){\footnotesize IIT Kharagpur\space };
+
+      \node[color=uto]at (0.50,1.03){\large CircleCI\space };
+
+      \node[color=utg]at (0.65,1.17){\normalsize Neural Networks\space };
+
+      \node[color=uto]at (1.24,0.14){\footnotesize Image Processing\space };
+
+      \node[color=uto]at (1.07,0.35){\large GitHub\space };
+
+      \node[color=utg]at (1.15,0.50){\scriptsize SVN\space };
+
+      \node[color=uto]at (1.18,1.01){\footnotesize MATLAB\space };
+
+      \node[color=uto]at (1.31,1.11){\tiny HTML\space };
+
+      \node[color=utg]at (1.51,0.22){\tiny STAAD Pro\space };
+
+      \node[color=utg]at (1.66,0.32){\footnotesize Coveralls\space };
+
+      \node[color=uto]at (1.43,0.48){\footnotesize ADCIRC\space };
+
+      \node[color=utg]at (1.36,0.61){\small Fortran\space };
+
+      \node[color=uto]at (1.70,0.92){\normalsize AdH\space };
+      
+      \node[color=utg]at (1.73,1.06){\small f2py\space };
+
+      \node[color=uto]at (1.76,1.18){\scriptsize ParaView\space };
+
+      \node[color=uto]at (1.99,0.23){\scriptsize Make\space };
+
+      \node[color=uto]at (1.93,0.48){\normalsize Finite Elements\space };
+
+      \node[color=utg]at (2.05,1.03){\huge C/\bigCC{}\space };
+
+      \node[color=utg]at (2.20,0.12){\footnotesize OpenMP\space };
+
+      \node[color=uto]at (2.39,0.21){\scriptsize UT Austin\space };
+
+      \node[color=utg]at (2.16,0.32){\small Travis CI\space };
+
+      \node[color=utg]at (2.49,0.42){\tiny AutoCAD\space };
+
+      \node[color=utg]at (2.26,0.61){\scriptsize ERDC\space };
+
+      \node[color=uto]at (2.65,0.90){\scriptsize Git\space };
+
+      \node[color=uto]at (2.40,1.19){\scriptsize SMS/WMS\space };
+
+    \end{tinyb}
+
+    \node[color=uto]at (0.10,0.74){\huge Computational Scientist\space };
+
+    \draw[color=gray] (current bounding box.north east) -- (current bounding box.north west) -- (current bounding box.south west) -- (current bounding box.south east) -- cycle;
+
+  \end{tikzpicture}
+
+%\end{figure}
+
+%------------------------------------THE END-----------------------------------%
+\end{document}
