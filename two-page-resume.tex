@@ -29,12 +29,13 @@
 
 %------------------------------------SUMMARY-----------------------------------%
 \section{Summary}
-Computational scientist with 8 years of inter-disciplinary research and
-software engineering experience through 15\smallplus{} projects spanning
-applied mathematics, numerical methods, computational mechanics, optimization,
-machine learning, and high-performance computing (HPC). Creator of 4 scientific
-software, contributor to 3 HPC software written in C, \CC{}, Python, and
-Fortran, and author of 5 published technical documents.
+Software engineer and computational scientist with 8 years of
+inter-disciplinary research and software development experience through
+15\smallplus{} projects spanning high-performance computing (HPC), applied
+mathematics, numerical methods, computational mechanics, optimization, and
+machine learning. Creator of 4 scientific software, contributor to 4 HPC
+software written in C, \CC{}, DP\CC{}, Python, and Fortran, and author of 5
+published technical documents.
 
 %------------------------------------HEADING-----------------------------------%
 \vspace{-182.8pt}
@@ -139,17 +140,35 @@ Fortran, and author of 5 published technical documents.
   \resumeSubHeadingListStart
 
     %---------------------------------Title------------------------------------%
-    \resumeSubheading{Research Associate}{\dates{December 2020}{Present}}
+    \resumeSubheading{Software Engineer}{\dates{February 2021}{Present}}
+
+      %-------------------------------Job 5------------------------------------%
+      \resumeSubSubheading{\textbf{Intel Corporation}}{Austin, TX}
+        \resumeItemListStart
+          \resumeUnlabeledItem{Owned sparse linear algebra and sparse solver
+            components as a contributor in the
+            Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
+            Kernel Library (oneMKL) team.}
+          \resumeUnlabeledItem{Implemented GPU performance optimizations for the
+            newly introduced DP\CC{} API of sparse $\times$ sparse matrix
+            product for compressed sparse row (CSR) matrices in oneMKL.}
+          \resumeUnlabeledItem{Doubled the performance of block sparse row (BSR)
+            matrix $\times$ column-major dense matrix product in oneMKL on CPUs
+            by implementing loop unrolling and AVX2/AVX512 compiler intrinsics.}
+        \resumeItemListEnd
+
+    %---------------------------------Title------------------------------------%
+    \resumeSubheading{Research Associate}{\dates{December 2020}{February 2021}}
  
       %-------------------------------Job 4------------------------------------%
       \resumeSubSubheading{\textbf{The University of Texas at Austin}}{Austin, TX}
         \resumeItemListStart
-          \resumeUnlabeledItem{Leading the development of coupled PyTorch
+          \resumeUnlabeledItem{Led the development of coupled PyTorch
             neural network and CFD/physics models in the Python
             software, Water Coupler, to potentially save lives and billions of
             dollars through hurricane compound flood forecasts.}
-          \resumeUnlabeledItem{Leading software projects that the US Army Corps
-            of Engineers (USACE) is sponsoring to expand the capabilities of
+          \resumeUnlabeledItem{Led software projects that the US Army Corps
+            of Engineers (USACE) sponsored to expand the capabilities of
             their CFD software, AdH, through addition of PETSc solvers and
             coupling with HEC-RAS.}
         \resumeItemListEnd
@@ -217,32 +236,14 @@ Fortran, and author of 5 published technical documents.
   \resumeSubHeadingListEnd
 \vspace{-3pt}
 
-%-----------------------------VOLUNTEER EXPERIENCE-----------------------------%
-\section{Volunteer Experience}
-  \resumeSubHeadingListStart
-
-    %---------------------------------Title------------------------------------%
-    \resumeSubheading{Undergraduate Research Assistant}{\dates{March 2012}{July 2013}}
- 
-      %-------------------------------Job 2------------------------------------%
-      \resumeSubSubheading{\textbf{Indian Institute of Technology (IIT) Kharagpur}}{Kharagpur, India}
-        \resumeItemListStart
-          \resumeUnlabeledItem{Published a peer-reviewed paper on detecting
-            cracks in concrete using an image processing and neural network
-            model that achieved 98.8\% accuracy, 99.7\% specificity,
-            80\% precision, and 60\% sensitivity.}
-          \resumeUnlabeledItem{Proposed improvements to genetic algorithms for
-            optimization of truss weights, establishing new minima for 3
-            complex benchmark problems in literature.}
-          \resumeUnlabeledItem{Supported the research of a PhD student by
-            creating FE models of sandwich materials subject to explosions.}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-4pt}
-
 %-----------------------------------PROJECTS-----------------------------------%
-\section{Software Contributions}
+\section{Select Software Contributions}
   \resumeSubItemListStart
+    \resumeSubItem{Contributor -- \href{https://https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math Kernel Library (oneMKL)}}
+      {Owned feature implementations, CPU/GPU architecture-specific performance
+       optimizations, and bug fixes for sparse linear algebra and sparse solver
+       components in oneMKL, written in \textbf{C}, \textbf{\CC{}},
+       \textbf{DP\CC{}}, and \textbf{Fortran}.}
     \resumeSubItem{Creator -- \href{https://github.com/gajanan-choudhary/water-coupler}{Water Coupler}}
       {Developed the \textbf{open-source parallel Python} software for coupling
       physics models, AdH (\textbf{C}), GSSHA (\textbf{\CC{}}), and ADCIRC
@@ -256,17 +257,6 @@ Fortran, and author of 5 published technical documents.
       {Created the Fortran/Python interface of ADCIRC (pyADCIRC), enabling physics
       based machine learning applications and multi-software coupling in Water
       Coupler.}
-    \resumeSubItem{Contributor -- \href{https://www.gsshawiki.com/}{GSSHA}}
-      {Created the \CC{}/Python interface of GSSHA (gsshapython) enabling
-      multi-software coupling with ADCIRC and AdH in Water Coupler.}
-    \resumeSubItem{Creator -- \href{https://github.com/gajanan-choudhary/htopy}{htopy}}
-      {Developed an \textbf{open-source Python} software for partially
-      automating the generation of Python interfaces of \textbf{C/\CC{}}
-      software, and used it to generate the Python interfaces of AdH and GSSHA.}
-    \resumeSubItem{Creator -- IR-Sect}
-      {Developed a proprietary \textbf{MATLAB} software with a graphical user
-      interface (\textbf{GUI}) for modeling 2D ship cross-sections and
-      calculating their sectorial properties by implementing graph algorithms.}
   \resumeSubItemListEnd
 \vspace{-5pt}
 
@@ -276,12 +266,13 @@ Fortran, and author of 5 published technical documents.
 
     \resumeSubheading{Software development:}{}
       \resumeItemListStart
-        \resumeItem{Programming}{C/\CC{}, Python, Fortran, MATLAB,
-            Bash, MPI, OpenMP, f2py, SWIG, and Python/C API.}
+        \resumeItem{Programming}{C/\CC{}, DP\CC{}, Python, Fortran, MATLAB,
+            SYCL, MPI, OpenMP, f2py, SWIG, Python/C API, and Bash.}
 
         \resumeItem{Tools}{GitHub, Bitbucket, Git, Mercurial, SVN,
             Travis CI, CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
-            Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, \LaTeX{}, HTML, and CSS.}
+            Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, \LaTeX{}, HTML,
+            and CSS.}
 
         \resumeItem{Concepts}{Data structures, algorithms, complexity,
             object-oriented programming (OOP), standard template library (STL),
@@ -304,9 +295,9 @@ Fortran, and author of 5 published technical documents.
           coupled numerical models.}
 
         \resumeItem{Applications}
-          {ANSYS, Abaqus, ParaView, AutoCAD, Adaptive Hydraulics (AdH),
-          ADvanced CIRCulation (ADCIRC), Gridded Surface Subsurface Hydrologic
-          Analysis (GSSHA), and Aquaveo SMS/WMS.}
+          {Adaptive Hydraulics (AdH), ADvanced CIRCulation (ADCIRC), Gridded
+          Surface Subsurface Hydrologic Analysis (GSSHA), ANSYS, Abaqus,
+          ParaView, Aquaveo SMS/WMS, and AutoCAD.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd

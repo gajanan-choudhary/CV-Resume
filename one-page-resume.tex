@@ -29,30 +29,26 @@
 
 %------------------------------------SUMMARY-----------------------------------%
 \section{Summary}
-Computational scientist with 8 years of interdisciplinary research and
-software development experience through 15\smallplus{}
-projects spanning high-performance computing (HPC), object-oriented programming,
-applied mathematics, numerical methods, computational mechanics, optimization,
-and machine learning. Creator of 4 scientific software, contributor to 3 HPC
-software written in C, \CC{}, Python, and Fortran, and author of 5 published
-technical documents.
-% \\[1\baselineskip] added above since \parbox{0.546\linewidth}{\section{Summary}}
-% messes up line spacing in the new section causing overlapping lines.
+Software engineer and computational scientist with 8 years of
+inter-disciplinary research and software development experience through
+15\smallplus{} projects spanning high-performance computing (HPC), applied
+mathematics, numerical methods, computational mechanics, optimization, and
+machine learning. Creator of 4 scientific software, contributor to 4 HPC
+software written in C, \CC{}, DP\CC{}, Python, and Fortran, and author of 5
+published technical documents.
 
 %------------------------------PROGRAMMING SKILLS------------------------------%
 \section{Skills}
   \resumeSubItemListStart
-    \resumeSubItem{Programming}{C/\CC{}, Python, Fortran, MATLAB, Bash, MPI,
-                               OpenMP, f2py, SWIG, and Python/C API.}
+    \resumeSubItem{Programming}{C/\CC{}, DP\CC{}, Python, Fortran, MATLAB, Bash,
+                               MPI, OpenMP, f2py, and Python/C API.}
     \resumeSubItem{Tools}{Git, GitHub, Travis CI, CircleCI, Docker, Coveralls,
                          CMake, Make, Gcov, LCOV, Doxygen, and \LaTeX{}.}
-    \resumeSubItem{Engineering}{AdH, ADCIRC, GSSHA, Aquaveo SMS/WMS,
-                                ANSYS, Abaqus, ParaView, and AutoCAD.}
   \resumeSubItemListEnd
 
 %------------------------------------HEADING-----------------------------------%
 %\setlength{\columnsep}{0pt}%
-\vspace{-250.75pt}
+\vspace{-244.4pt}
 %%\vspace{-162pt}
 %\vspace{-82pt}
 %\vspace{-168.25pt}
@@ -151,7 +147,7 @@ technical documents.
 
 %\vspace{68pt}
 %\vspace{164pt}
-\vspace{238.25pt}
+\vspace{228.25pt}
 
 % Following needed since wordcloud messes up wrapping the \hrule lines
 
@@ -181,20 +177,53 @@ technical documents.
   \resumeSubHeadingListStart
 
     %---------------------------------Title------------------------------------%
-    \resumeSubheading{Postdoctoral Fellow}{\dates{October 2019}{Present}}
+    \resumeSubheading{Software Engineer}{\dates{February 2021}{Present}}
+
+      %-------------------------------Job 5------------------------------------%
+      \resumeSubSubheading{\textbf{Intel Corporation}}{Austin, TX}
+        \resumeItemListStart
+          \resumeItem{Responsibilities}
+            {Owned sparse linear algebra and sparse solver components in the
+            Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
+            Kernel Library (oneMKL) team, optimizing their performance on Intel
+            CPUs and GPUs.}
+          \resumeItem{Key contributions}
+            {Implemented GPU optimizations for sparse $\times$ sparse matrix
+            product for CSR format, and doubled the performance of sparse
+            $\times$ dense matrix product on CPUs for BSR format in oneMKL.}
+        \resumeItemListEnd
+
+    %---------------------------------Title------------------------------------%
+    \resumeSubheading{Research Associate}{\dates{December 2020}{February 2021}}
  
-      %-------------------------------Job 1------------------------------------%
+      %-------------------------------Job 4------------------------------------%
+      \resumeSubSubheading{\textbf{The University of Texas at Austin}}{Austin, TX}
+        \resumeItemListStart
+          \resumeItem{Responsibilities}
+            {Conducted research on hurricanes and managed research direction
+            of post-doctoral fellows and doctoral students in the team.}
+          \resumeItem{Key contribution}
+            {Led the development of coupled PyTorch neural network and CFD
+            models in the Python software, Water Coupler, to potentially save
+            lives and billions of dollars through hurricane flood forecasts.}
+        \resumeItemListEnd
+
+    %---------------------------------Title------------------------------------%
+    \resumeSubheading{Postdoctoral Fellow}{\dates{October 2019}{December 2020}}
+ 
+      %-------------------------------Job 3------------------------------------%
       \resumeSubSubheading{\textbf{The University of Texas at Austin}}{Austin, TX}
         \resumeItemListStart
           \resumeItem{Responsibilities}
             {Open-source parallel software development for research on coupled
             fluid dynamics models.}
 
-          \resumeItem{Key contribution}
+          \resumeItem{Key contributions}
             {Coupled diffusive wave and groundwater models in the \textbf{C}
-            software, Adaptive Hydraulics (AdH), and created a \textbf{Python}
-            HPC interface for the \textbf{Fortran} software, ADvanced
-            CIRCulation (ADCIRC).}
+            software, Adaptive Hydraulics (AdH), created pyADCIRC, a
+            \textbf{Python} interface for the \textbf{Fortran} software,
+            ADvanced CIRCulation (ADCIRC), and added coupling support for
+            pyADCIRC in Water Coupler.}
         \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
@@ -207,48 +236,30 @@ technical documents.
             {Software and library development for research on coupled
             fluid dynamics models.}
 
-          \resumeItem{Key contribution}
-            {Coupled the \textbf{\CC{}} software, Gridded Surface Subsurface
-            Hydrologic Analysis (GSSHA), with \textbf{C}-based AdH by
-            designing, implementing, testing, validating, and coupling their
-            \textbf{Python} interfaces.}
+          \resumeItem{Key contributions}
+            {Created \textbf{Water Coupler}, an \textbf{open-source Python}
+            software for coupling multiple CFD and machine learning models
+            written in \textbf{C}, \textbf{\CC{}}, \textbf{Fortran} and
+            \textbf{Python} through portable parallel Python interfaces for
+            simulating compound floods due to hurricanes.}
        \resumeItemListEnd
 
-    %---------------------------------Title------------------------------------%
-    \resumeSubheading{Assistant Surveyor}{\dates{July 2013}{July 2014}}
- 
-      %-------------------------------Job 3------------------------------------%
-      \resumeSubSubheading{\textbf{Indian Register of Shipping}}{Mumbai, India}
-        \resumeItemListStart
-          \resumeItem{Responsibilities}
-            {Research on stress response of ship hulls to bending, shear,
-            torsion, and warping loads.}
-
-          \resumeItem{Key contribution}
-            {Developed a \textbf{MATLAB} software with a \textbf{GUI} for
-            modeling and stress analysis of ships.}
-        \resumeItemListEnd
+%    %---------------------------------Title------------------------------------%
+%    \resumeSubheading{Assistant Surveyor}{\dates{July 2013}{July 2014}}
+% 
+%      %-------------------------------Job 1------------------------------------%
+%      \resumeSubSubheading{\textbf{Indian Register of Shipping}}{Mumbai, India}
+%        \resumeItemListStart
+%          \resumeItem{Responsibilities}
+%            {Research on stress response of ship hulls to bending, shear,
+%            torsion, and warping loads.}
+%
+%          \resumeItem{Key contribution}
+%            {Developed a \textbf{MATLAB} software with a \textbf{GUI} for
+%            modeling and stress analysis of ships.}
+%        \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%-----------------------------------PROJECTS-----------------------------------%
-\section{Projects}
-  \resumeSubItemListStart
-    \resumeSubItem{\href{https://github.com/gajanan-choudhary/water-coupler}{Water Coupler}}
-      {A \textbf{Python} HPC software for coupling multiple computational fluid
-      dynamics models written in \textbf{C} (AdH), \textbf{\CC{}} (GSSHA), and
-      \textbf{Fortran} (ADCIRC) for simulating compound floods due to hurricanes.}
-    \resumeSubItem{\href{https://github.com/gajanan-choudhary/htopy}{htopy}}
-      {An \textbf{open-source Python} software for automating
-      generation of Python interfaces of \textbf{C/\CC{}} software.}
-    \resumeSubItem{IR-Sect}
-      {A \textbf{MATLAB} software with a graphical user interface (\textbf{GUI})
-      for modeling 2D beam cross-sections that implements \textbf{graph
-      algorithms} for calculating their sectorial properties to simplify stress
-      analysis.}
-    \resumeSubItem{Machine Learning}
-      {Used \textbf{image processing} and \textbf{neural networks} to detect
-      cracks in concrete surfaces.}
-  \resumeSubItemListEnd
 
 %-----------------------------------EDUCATION----------------------------------%
 \section{Education}
@@ -258,27 +269,7 @@ technical documents.
 
       \resumeSubSubheading{Doctorate (Ph.D.) in Engineering Mechanics}{\dates{August 2014}{December 2019}}
 
-      \resumeSubSubheading{Graduate Portfolio in Scientific Computing}{\dates{August 2014}{May 2018}}
-
-      \resumeSubSubheading{Master of Science (M.S.) in Engineering Mechanics}{\dates{August 2014}{May 2017}}
-
-    \resumeSubheading{Indian Institute of Technology (IIT) Kharagpur}{Kharagpur, India}
-
-      \resumeSubSubheading{Bachelor of Technology (B.Tech.) in Civil Engineering}{\dates{July 2009}{July 2013}}
-
   \resumeSubHeadingListEnd
-
-%----------------------------------ACTIVITIES----------------------------------%
-%\section{Certifications/Activities}
-%  \resumeSubHeadingListStart
-%    \resumeSubItem{Teaching}{Obtained a \textbf{basic teaching certificate} by
-%                            attending teaching workshop series at UT Austin}
-%    \resumeSubItem{Diversity}{Mentored a female undergraduate student in
-%                             Spring '18 as part of Graduates Linked with
-%                             Undergraduates in Engineering (GLUE) program at UT
-%                             Austin, with the aim to inspire women to pursue
-%                             graduate degrees in STEM}
-%  \resumeSubHeadingListEnd
 
 %------------------------------------THE END-----------------------------------%
 \end{document}
