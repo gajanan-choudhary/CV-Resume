@@ -4,29 +4,32 @@ Address: Lake Austin Blvd., Austin, TX 78703
 
 Phone: (512) 657-3030
 
-E-mail: gajanan@utexas.edu
+E-mail: gajananchoudhary91@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/gajananchoudhary
 
-Website: http://users.oden.utexas.edu/~gajanan
+Website: http://gajanan-choudhary.github.io
 
 GitHub: http://github.com/gajanan-choudhary
 
 
 ## Summary
-Computational engineer with 8 years of interdisciplinary
-research and software development experience through
-15+ projects, and contributor to multiple
-major computational fluid dynamics HPC software.
+Software engineer and computational scientist with 8 years of
+inter-disciplinary research and software development experience through
+15+ projects spanning high-performance computing (HPC), applied
+mathematics, numerical methods, computational mechanics, optimization, and
+machine learning. Creator of 4 scientific software, contributor to 4 HPC
+software written in C, C++, DPC++, Python, and Fortran, and author of 5
+published technical documents.
 
 
 ## Skills
 * Software development:
-    - Programming: C/C++, Fortran, Python, MATLAB, Bash, MPI,
-      OpenMP, f2py, SWIG, and Python/C API.
+    - Programming: C/C++, DPC++, Fortran, Python, MATLAB, SYCL, MPI,
+      OpenMP, f2py, SWIG, and Python/C API, and Bash.
     - Tools: GitHub, Bitbucket, Git, Mercurial, SVN, Travis CI,
       CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
-      Gcov, LCOV, GProf, Doxygen, LaTeX, HTML, and CSS.
+      Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, LaTeX, HTML, and CSS.
     - Concepts: Data structures, algorithms, complexity,
       object-oriented programming (OOP), standard template
       library (STL), high-performance computing, parallel
@@ -42,13 +45,39 @@ major computational fluid dynamics HPC software.
     - Mathematics: Linear Algebra, functional analysis, partial
       differential equations, numerical methods, and
       optimization.
-    - Applications: AdH, ADCIRC, GSSHA, Aquaveo SMS/WMS, ANSYS,
-      Abaqus, ParaView, AutoCAD, and STAAD Pro.
+    - Applications: Adaptive Hydraulics (AdH), ADvanced CIRCulation (ADCIRC),
+      Gridded Surface Subsurface Hydrologic Analysis (GSSHA), Aquaveo SMS/WMS,
+      ANSYS, Abaqus, ParaView, AutoCAD, and STAAD Pro.
 
 
 ## Work Experience
+* Software Engineer, Intel Corporation,
+Austin, TX, February 2021 - Present.
+  - Responsibilities: Owned sparse linear algebra and sparse solver components
+    in the Intel oneAPI Math Kernel Library (oneMKL) team, and optimized their
+    performance on CPUs and GPUs.
+  - Implemented GPU performance optimizations for the
+    newly introduced DPC++ API of sparse &times; sparse matrix
+    product for compressed sparse row (CSR) matrices in oneMKL.
+  - Doubled the performance of block sparse row (BSR)
+    matrix &times; column-major dense matrix product in oneMKL on CPUs
+    by implementing loop unrolling and AVX2/AVX512 compiler intrinsics.
+
+* Research Associate, The University of Texas at Austin,
+Austin, TX, December 2020 - February 2021.
+  - Responsibilities: Conducted research on hurricanes and managed research
+    direction of post-doctoral fellows and doctoral students in the team.
+  - Led the development of coupled PyTorch
+    neural network and CFD/physics models in the Python
+    software, Water Coupler, to potentially save lives and billions of
+    dollars through hurricane compound flood forecasts.
+  - Led software projects that the US Army Corps
+    of Engineers (USACE) sponsored to expand the capabilities of
+    their CFD software, AdH, through addition of PETSc solvers and
+    coupling with HEC-RAS.
+
 * Postdoctoral Fellow, The University of Texas at Austin,
-Austin, TX, October 2019 - Present.
+Austin, TX, October 2019 - December 2020.
     - Responsibility: Open-source parallel software development
       for research on coupled fluid dynamics models.
     - Coupled diffusive wave and groundwater models in the C
@@ -291,6 +320,4 @@ Supervisors: Dr. N. Mitra and Dr. S. K. Barai.
 * Hindi: Native
 
 * Marathi: Native
-
-* Japanese: Elementary
 
