@@ -232,9 +232,16 @@ Supervisors: Dr. N. Mitra and Dr. S. K. Barai.
   for simulation of compound floods. In draft.
 
 * Choudhary, G. K., Trahan, C. J., Pettey, L., Farthing, M.,
-  Inanc, E., Savant, G., & Dawson, C. Strongly coupled 2D and 3D
-  shallow water models for simulation of baroclinic flows
-  involving wetting and drying. In draft.
+  Berger, C., Savant, G., Inanc, E., Dawson, C. & Loveland, M. D.
+  Strongly coupled 2D and 3D shallow water models I: theory and
+  verification. Journal of Hydraulic Engineering. Submitted and
+  under review.
+
+* Choudhary, G. K., Trahan, C. J., Pettey, L., Farthing, M.,
+  Berger, C., Savant, G., Inanc, E., Dawson, C. & Loveland, M. D.
+  Strongly coupled 2D and 3D shallow water models II: validation
+  and applications. Journal of Hydraulic Engineering. Submitted
+  and under review.
 
 * Trahan, C. J., Savant, G., Berger, R. C., McAlpin, T. O.,
   Pettey, L., Choudhary, G. K., & Dawson, C. N. (2018).
