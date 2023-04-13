@@ -1,6 +1,6 @@
 # Gajanan Choudhary
 
-Address: Lake Austin Blvd., Austin, TX 78703
+Address: Austin, TX, USA
 
 Phone: (512) 657-3030
 
