@@ -211,10 +211,10 @@ Supervisors: Dr. N. Mitra and Dr. S. K. Barai.
 
 
 ## Activities
-* Diversity: Mentored a female undergraduate student in Spring
+* Diversity: Mentored an undergraduate student in Spring
   2018 as part of Graduates Linked with Undergraduates in
-  Engineering (GLUE) program at UT Austin, with the aim to
-  inspire women to pursue graduate degrees in STEM.
+  Engineering (GLUE) program at UT Austin, aimed at
+  inspiring women to pursue graduate degrees in STEM.
 
 * Dance: Completed intermediate level training in various social
   dance forms at UT Austin and Austin Swing Syndicate.
