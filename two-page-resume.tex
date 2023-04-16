@@ -29,13 +29,13 @@
 
 %------------------------------------SUMMARY-----------------------------------%
 \section{Summary}
-Software engineer and computational scientist with 8 years of
-inter-disciplinary research and software development experience through
-15\smallplus{} projects spanning high-performance computing (HPC), applied
-mathematics, numerical methods, computational mechanics, optimization, and
-machine learning. Creator of 4 scientific software, contributor to 4 HPC
-software written in C, \CC{}, DP\CC{}, Python, and Fortran, and author of 5
-published technical documents.
+Computational scientist and software engineer with over 10 years of
+inter-disciplinary research and software development experience spanning
+high-performance computing (HPC), applied mathematics, computational
+mechanics, performance optimization, and machine learning. Creator of 4
+scientific software, contributor to 5 HPC software written in C, \CC{},
+SYCL/DP\CC{}, Python, and Fortran, and author of 5 published technical
+documents.
 
 %------------------------------------HEADING-----------------------------------%
 \vspace{-182.8pt}
@@ -145,16 +145,22 @@ published technical documents.
       %-------------------------------Job 5------------------------------------%
       \resumeSubSubheading{\textbf{Intel Corporation}}{Austin, TX}
         \resumeItemListStart
-          \resumeUnlabeledItem{Owned sparse linear algebra and sparse solver
-            components as a contributor in the
-            Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
+          \resumeUnlabeledItem{Owned sparse linear algebra and high-performance
+            conjugate gradient (HPCG) benchmark components as a contributor in
+            the Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
             Kernel Library (oneMKL) team.}
-          \resumeUnlabeledItem{Implemented GPU performance optimizations for the
-            newly introduced DP\CC{} API of sparse $\times$ sparse matrix
-            product for compressed sparse row (CSR) matrices in oneMKL.}
+          \resumeUnlabeledItem{Doubled the performance of sparse matrix-vector
+            product (GEMV) oneMKL SYCL API on latest Intel GPUs using SIMD
+            vectorization and prefetching techniques.}
+          \resumeUnlabeledItem{Implemented GPU performance optimizations for
+            the newly introduced sparse $\times$ sparse matrix product
+            (matmat/spGEMM) SYCL API for compressed sparse row (CSR) matrices
+            in oneMKL.}
           \resumeUnlabeledItem{Doubled the performance of block sparse row (BSR)
             matrix $\times$ row-major dense matrix product in oneMKL on CPUs
-            by implementing loop unrolling and AVX2/AVX512 compiler intrinsics.}
+            by using AVX512 compiler intrinsics.}
+          \resumeUnlabeledItem{Introduced optimized SYCL APIs in oneMKL
+            for sorting, copying and transposing CSR matrices on GPUs.}
         \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
@@ -201,17 +207,13 @@ published technical documents.
           \resumeUnlabeledItem{Created the open-source parallel Python software,
             Water Coupler, by coupling 2 CFD software of USACE, AdH and GSSHA,
             to save lives through real-time hurricane compound flood forecasts.}
-          \resumeUnlabeledItem{Developed the HPC Python interfaces of AdH and
-            GSSHA by creating and using a new open-source software, htopy, which
-            automates generation of Python wrappers of C/\CC{} software in
-            hours instead of days.}
           \resumeUnlabeledItem{Developed, tested, verified, validated,
             documented, and published coupling between 2D and 3D shallow water
             models in AdH for USACE for enabling one of the first simulations of
             flooding with 3D ocean models.}
-          \resumeUnlabeledItem{Contributed numerous physics modules to AdH for
-            USACE, including its wind library, 3D prism mesh adaption, and
-            improved parallel load rebalancing for 3D models.}
+          \resumeUnlabeledItem{Developed important physics features in AdH
+            for USACE, including its wind library, 3D prism mesh adaption,
+            and improved parallel load rebalancing in 3D models.}
        \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
@@ -240,10 +242,10 @@ published technical documents.
 \section{Select Software Contributions}
   \resumeSubItemListStart
     \resumeSubItem{Contributor -- \href{https://https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math Kernel Library (oneMKL)}}
-      {Owned feature implementations, CPU/GPU architecture-specific performance
-       optimizations, and bug fixes for sparse linear algebra and sparse solver
+      {Owned feature implementations and CPU/GPU architecture-specific
+       performance optimizations for sparse linear algebra and HPCG benchmark
        components in oneMKL, written in \textbf{C}, \textbf{\CC{}},
-       \textbf{DP\CC{}}, and \textbf{Fortran}.}
+       \textbf{SYCL/DP\CC{}}, and \textbf{Fortran}.}
     \resumeSubItem{Creator -- \href{https://github.com/gajanan-choudhary/water-coupler}{Water Coupler}}
       {Developed the \textbf{open-source parallel Python} software for coupling
       physics models, AdH (\textbf{C}), GSSHA (\textbf{\CC{}}), and ADCIRC
@@ -266,8 +268,8 @@ published technical documents.
 
     \resumeSubheading{Software development:}{}
       \resumeItemListStart
-        \resumeItem{Programming}{C/\CC{}, DP\CC{}, Python, Fortran, MATLAB,
-            SYCL, MPI, OpenMP, f2py, SWIG, Python/C API, and Bash.}
+        \resumeItem{Programming}{C/\CC{}, SYCL/DP\CC{}, Python, Fortran,
+            MATLAB, MPI, OpenMP, f2py, SWIG, Python/C API, and Bash.}
 
         \resumeItem{Tools}{GitHub, Bitbucket, Git, Mercurial, SVN,
             Travis CI, CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
@@ -276,10 +278,9 @@ published technical documents.
 
         \resumeItem{Concepts}{Data structures, algorithms, complexity,
             object-oriented programming (OOP), standard template library (STL),
-            parallel programming, general
-            purpose GPU (GPGPU) programming, language interoperability,
-            continuous integration and continuous delivery (CI/CD), and
-            test-driven development (TDD).}
+            parallel programming, CPU and GPU performance optimization,
+            language interoperability, continuous integration and
+            continuous delivery (CI/CD), and test-driven development (TDD).}
       \resumeItemListEnd
 
     \resumeSubheading{Research:}{}
