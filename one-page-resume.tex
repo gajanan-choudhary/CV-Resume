@@ -29,26 +29,26 @@
 
 %------------------------------------SUMMARY-----------------------------------%
 \section{Summary}
-Software engineer and computational scientist with 8 years of
-inter-disciplinary research and software development experience through
-15\smallplus{} projects spanning high-performance computing (HPC), applied
-mathematics, numerical methods, computational mechanics, optimization, and
-machine learning. Creator of 4 scientific software, contributor to 4 HPC
-software written in C, \CC{}, DP\CC{}, Python, and Fortran, and author of 5
-published technical documents.
+Computational scientist and software engineer with over 10 years of
+inter-disciplinary research and software development experience spanning
+high-performance computing (HPC), applied mathematics, computational
+mechanics, performance optimization, and machine learning. Creator of 4
+scientific software, contributor to 5 HPC software written in C, \CC{},
+SYCL/DP\CC{}, Python, and Fortran, and author of 5 published technical
+documents.
 
 %------------------------------PROGRAMMING SKILLS------------------------------%
 \section{Skills}
   \resumeSubItemListStart
-    \resumeSubItem{Programming}{C/\CC{}, DP\CC{}, Python, Fortran, MATLAB, Bash,
-                               MPI, OpenMP, f2py, and Python/C API.}
+    \resumeSubItem{Programming}{C/\CC{}, SYCL/DP\CC{}, Python, Fortran, MPI,
+                               OpenMP, Bash, f2py, and Python/C API.}
     \resumeSubItem{Tools}{Git, GitHub, Travis CI, CircleCI, Docker, Coveralls,
                          CMake, Make, Gcov, LCOV, Doxygen, and \LaTeX{}.}
   \resumeSubItemListEnd
 
 %------------------------------------HEADING-----------------------------------%
 %\setlength{\columnsep}{0pt}%
-\vspace{-244.4pt}
+\vspace{-242.1pt}
 %%\vspace{-162pt}
 %\vspace{-82pt}
 %\vspace{-168.25pt}
@@ -147,7 +147,7 @@ published technical documents.
 
 %\vspace{68pt}
 %\vspace{164pt}
-\vspace{228.25pt}
+\vspace{225.95pt}
 
 % Following needed since wordcloud messes up wrapping the \hrule lines
 
@@ -183,14 +183,16 @@ published technical documents.
       \resumeSubSubheading{\textbf{Intel Corporation}}{Austin, TX}
         \resumeItemListStart
           \resumeItem{Responsibilities}
-            {Owned sparse linear algebra and sparse solver components in the
+            {Owned sparse linear algebra and high-performance conjugate gradient
+            (HPCG) benchmark components as a contributor in the
             Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
-            Kernel Library (oneMKL) team, optimizing their performance on Intel
-            CPUs and GPUs.}
+            Kernel Library (oneMKL) team.}
           \resumeItem{Key contributions}
-            {Implemented GPU optimizations for sparse $\times$ sparse matrix
-            product for CSR format, and doubled the performance of sparse
-            $\times$ dense matrix product on CPUs for BSR format in oneMKL.}
+            {Doubled the performance of key \textbf{SYCL} APIs on GPUs, viz.,
+            sparse matrix-vector product (GEMV) and sparse $\times$ sparse
+            matrix product (matmat) for CSR format, and doubled the
+            performance of sparse $\times$ dense matrix product (GEMM) on CPUs
+            for BSR format in oneMKL.}
         \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
@@ -204,8 +206,9 @@ published technical documents.
             of post-doctoral fellows and doctoral students in the team.}
           \resumeItem{Key contribution}
             {Led the development of coupled PyTorch neural network and CFD
-            models in the Python software, Water Coupler, to potentially save
-            lives and billions of dollars through hurricane flood forecasts.}
+            models in the \textbf{Python} software, Water Coupler, to
+            potentially save lives and billions of dollars through hurricane
+            flood forecasts.}
         \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
