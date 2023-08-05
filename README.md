@@ -1,6 +1,6 @@
 # Gajanan Choudhary
 
-Address: Lake Austin Blvd., Austin, TX 78703
+Address: Austin, TX, USA
 
 Phone: (512) 657-3030
 
@@ -14,29 +14,28 @@ GitHub: http://github.com/gajanan-choudhary
 
 
 ## Summary
-Software engineer and computational scientist with 8 years of
-inter-disciplinary research and software development experience through
-15+ projects spanning high-performance computing (HPC), applied
-mathematics, numerical methods, computational mechanics, optimization, and
-machine learning. Creator of 4 scientific software, contributor to 4 HPC
-software written in C, C++, DPC++, Python, and Fortran, and author of 5
-published technical documents.
-
+Computational scientist and software engineer with over 10 years of
+inter-disciplinary research and software development experience spanning
+high-performance computing (HPC), CPU and GPU performance optimization,
+applied mathematics, numerical methods, computational mechanics, and
+machine learning. Creator of 4 scientific software, contributor to 5 HPC
+software/libraries written in C, C++, SYCL/DPC++, Python, and Fortran,
+and author of 5 published technical documents.
 
 ## Skills
 * Software development:
-    - Programming: C/C++, DPC++, Fortran, Python, MATLAB, SYCL, MPI,
-      OpenMP, f2py, SWIG, and Python/C API, and Bash.
+    - Programming: C/C++, Fortran, Python, MATLAB, SYCL/DPC++, MPI,
+      OpenMP, f2py, SWIG, Python/C API, and Bash.
     - Tools: GitHub, Bitbucket, Git, Mercurial, SVN, Travis CI,
       CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
       Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, LaTeX, HTML, and CSS.
     - Concepts: Data structures, algorithms, complexity,
       object-oriented programming (OOP), standard template
-      library (STL), high-performance computing, parallel
-      programming, general purpose GPU (GPGPU) programming,
-      language interoperability, debugging, continuous
-      integration and continuous delivery (CI/CD), and
-      test-driven development (TDD).
+      library (STL), high-performance computing, parallel programming,
+      CPU and GPU performance optimization, compiler intrinsics,
+      assembly, language interoperability, debugging, continuous
+      integration and continuous delivery (CI/CD), and test-driven
+      development (TDD).
 
 * Research:
     - Engineering: Computational mechanics, computational fluid
@@ -53,15 +52,20 @@ published technical documents.
 ## Work Experience
 * Software Engineer, Intel Corporation,
 Austin, TX, February 2021 - Present.
-  - Responsibilities: Owned sparse linear algebra and sparse solver components
-    in the Intel oneAPI Math Kernel Library (oneMKL) team, and optimized their
-    performance on CPUs and GPUs.
-  - Implemented GPU performance optimizations for the
-    newly introduced DPC++ API of sparse &times; sparse matrix
+  - Responsibilities: Owned High-Performance Conjugate Gradient (HPCG)
+    benchmark and sparse BLAS components in the Intel oneAPI Math
+    Kernel Library (oneMKL) team and optimized their performance on latest
+    and upcoming Intel CPUs and GPUs.
+  - Doubled the performance of sparse matrix-vector product (GEMV)
+    on latest Intel GPUs using SIMD vectorization and prefetching techniques.
+  - Implemented GPU performance optimizations for a newly introduced
+    SYCL/DPC++ API, sparse::matmat, for sparse &times; sparse = sparse matrix
     product for compressed sparse row (CSR) matrices in oneMKL.
   - Doubled the performance of block sparse row (BSR)
     matrix &times; column-major dense matrix product in oneMKL on CPUs
-    by implementing loop unrolling and AVX2/AVX512 compiler intrinsics.
+    using AVX512 compiler intrinsics.
+  - Introduced optimized SYCL APIs in oneMKL for sorting, copying and
+    transposing CSR matrices on GPUs.
 
 * Research Associate, The University of Texas at Austin,
 Austin, TX, December 2020 - February 2021.
@@ -211,10 +215,10 @@ Supervisors: Dr. N. Mitra and Dr. S. K. Barai.
 
 
 ## Activities
-* Diversity: Mentored a female undergraduate student in Spring
+* Diversity: Mentored an undergraduate student in Spring
   2018 as part of Graduates Linked with Undergraduates in
-  Engineering (GLUE) program at UT Austin, with the aim to
-  inspire women to pursue graduate degrees in STEM.
+  Engineering (GLUE) program at UT Austin, aimed at
+  inspiring women to pursue graduate degrees in STEM.
 
 * Dance: Completed intermediate level training in various social
   dance forms at UT Austin and Austin Swing Syndicate.
@@ -232,9 +236,16 @@ Supervisors: Dr. N. Mitra and Dr. S. K. Barai.
   for simulation of compound floods. In draft.
 
 * Choudhary, G. K., Trahan, C. J., Pettey, L., Farthing, M.,
-  Inanc, E., Savant, G., & Dawson, C. Strongly coupled 2D and 3D
-  shallow water models for simulation of baroclinic flows
-  involving wetting and drying. In draft.
+  Berger, C., Savant, G., Inanc, E., Dawson, C. & Loveland, M. D.
+  Strongly coupled 2D and 3D shallow water models I: theory and
+  verification. Journal of Hydraulic Engineering. Submitted and
+  under review.
+
+* Choudhary, G. K., Trahan, C. J., Pettey, L., Farthing, M.,
+  Berger, C., Savant, G., Inanc, E., Dawson, C. & Loveland, M. D.
+  Strongly coupled 2D and 3D shallow water models II: validation
+  and applications. Journal of Hydraulic Engineering. Submitted
+  and under review.
 
 * Trahan, C. J., Savant, G., Berger, R. C., McAlpin, T. O.,
   Pettey, L., Choudhary, G. K., & Dawson, C. N. (2018).
