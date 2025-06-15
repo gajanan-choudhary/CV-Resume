@@ -6,39 +6,44 @@
 
 \documentclass[letterpaper,10pt]{article}
 
-\include{mypacks}
-\include{mymacros}
+\input{mypacks}
+\input{mymacros}
 
 \begin{document}
 
 %-----------------------------%
 % Customize your resume below %
 %-----------------------------%
-{\scshape\huge\Author}\vspace{2pt}
+\href{\AuthorWebsiteLink}{\scshape\huge\Author}\vspace{2pt}
 %\href{\AuthorWebsiteLink}{\scshape\huge\Author}\vspace{2pt}
 
 \begin{small}
   %Website: \href{\AuthorWebsiteLink}{\color[HTML]{0f4cb4}\myuline{\smash{\AuthorWebsiteText}}}
-  Website: \href{\AuthorWebsiteLink}{\AuthorWebsiteText}
+  %Website: \href{\AuthorWebsiteLink}{\AuthorWebsiteText}
+  LinkedIn: \href{\AuthorLinkedInLink}{\AuthorLinkedInText}
 
-  \vspace{2pt}\AuthorAddress
+  \vspace{2pt}
+  GitHub: \href{\AuthorGitHubLink}{\AuthorGitHubText}
 
-  \vspace{1pt}\href{mailto:\AuthorEmail}{\AuthorEmail} |
+  \vspace{1pt}
+  \AuthorAddress{} |
+  \href{mailto:\AuthorEmail}{\AuthorEmail} |
   \href{\AuthorPhoneLink}{\AuthorPhoneText}
 \end{small}
 
 %------------------------------------SUMMARY-----------------------------------%
 \section{Summary}
-Computational scientist and software engineer with over 10 years of
-inter-disciplinary research and software development experience spanning
-high-performance computing (HPC), applied mathematics, computational
-mechanics, performance optimization, and machine learning. Creator of 4
-scientific software, contributor to 5 HPC software written in C, \CC{},
-SYCL/DP\CC{}, Python, and Fortran, and author of 5 published technical
-documents.
+Computational scientist with 12+ years of interdisciplinary research and
+high-performance computing (HPC) production software development experience
+through long-term projects spanning applied mathematics, CPU/GPU kernel
+development, optimization, and machine learning.
+Creator of 4 scientific software, contributor to 5 HPC software written in
+C/C++, SYCL, Python, and Fortran, maintainer of the sparse BLAS domain in the
+open-source oneAPI Specification under the Unified Acceleration (UXL)
+foundation, and author of 6 technical publications.
 
 %------------------------------------HEADING-----------------------------------%
-\vspace{-182.8pt}
+\vspace{-196.9pt}
 
 \begin{wrapfigure}[-20]{R}{0pt} %{-3cm}
 
@@ -48,83 +53,103 @@ documents.
 
     \begin{tinyb}
 
-      \node[color=utg]at (0.20,0.13){\footnotesize Assembly\space };
+      \node[color=utg]at (0.12,0.12){\footnotesize x86 Assembly\space };
 
-      \node[color=uto]at (0.10,0.20){\tiny Kernels\space };
+      \node[color=uto]at (0.16,0.20){\tiny Kernel optimizations\space };
 
-      \node[color=uto]at (0.57,0.25){\tiny Docker\space };
+      \node[color=uto]at (0.57,0.26){\tiny Docker\space };
 
       \node[color=utg]at (0.17,0.34){\Large Python\space };
 
-      \node[color=uto]at (0.46,0.45){\scriptsize Sparse BLAS\space };
+      \node[color=uto]at (0.36,0.48){\footnotesize Sparse BLAS\space };
 
-      \node[color=utg]at (0.08,0.51){\footnotesize ANSYS\space };
+      \node[color=utg]at (0.12,0.56){\scriptsize SWIG\space };
 
-      \node[color=utg]at (0.47,0.61){\normalsize MPI\space };
+      \node[color=utg]at (0.43,0.61){\normalsize MPI\space };
 
-      \node[color=uto]at (0.09,0.92){\scriptsize Intel Corporation\space };
+      \node[color=utg]at (0.73,0.62){\tiny Algebra\space };
 
-      \node[color=utg]at (0.12,1.03){\footnotesize SWIG\space };
+      \node[color=utg]at (0.30,0.86){\scriptsize GEMMs\space };
+
+      \node[color=uto]at (0.16,0.96){\scriptsize Intel Corporation\space };
+
+      \node[color=utg]at (0.13,1.06){\scriptsize PyTorch\space };
 
       \node[color=uto]at (0.16,1.18){\small CMake\space };
 
-      \node[color=uto]at (0.78,0.17){\large SYCL\space };
+      \node[color=uto]at (0.83,0.17){\large SYCL\space };
 
-      \node[color=utg]at (0.85,0.32){\tiny GPUs\space };
+      \node[color=utg]at (0.81,0.32){\scriptsize GPUs\space };
 
-      \node[color=uto]at (0.79,0.57){\footnotesize ctypes\space };
+      \node[color=uto]at (0.96,0.58){\footnotesize ctypes\space };
 
       \node[color=utg]at (0.85,0.89){\footnotesize IIT Kharagpur\space };
 
-      \node[color=uto]at (0.50,1.03){\large CircleCI\space };
+      \node[color=utg  ]at (1.11,0.98){\scriptsize Bash\space };
 
-      \node[color=utg]at (0.65,1.17){\normalsize Neural Networks\space };
+      \node[color=uto]at (0.51,1.07){\normalsize Machine learning\space };
 
-      \node[color=uto]at (1.28,0.14){\footnotesize Image Processing\space };
+      \node[color=utg]at (0.65,1.17){\footnotesize Neural Networks\space };
 
-      \node[color=utg]at (1.25,0.22){\tiny Performance optimization\space };
+      \node[color=uto]at (1.28,0.14){\scriptsize Performance engineering\space };
+
+      \node[color=utg]at (1.45,0.22){\tiny Image Processing\space };
+
+      \node[color=utg]at (1.66,0.32){\footnotesize CI/CD\space };
+
+      \node[color=utg]at (1.70,0.40){\tiny Benchmarking\space };
 
       \node[color=uto]at (1.07,0.35){\large GitHub\space };
 
-      \node[color=utg]at (1.10,0.50){\scriptsize HPCG\space };
+      \node[color=utg]at (1.06,0.48){\footnotesize HPCG\space };
 
-      \node[color=uto]at (1.18,1.01){\footnotesize MATLAB\space };
+      \node[color=uto]at (1.41,0.47){\scriptsize Accelerators\space };
 
-      \node[color=uto]at (1.31,1.11){\tiny Bash\space };
+      \node[color=uto]at (1.44,0.56){\tiny HW-SW Co-design\space };
 
-      \node[color=utg]at (1.66,0.32){\footnotesize Coveralls\space };
-
-      \node[color=uto]at (1.43,0.48){\footnotesize ADCIRC\space };
-
-      \node[color=utg]at (1.36,0.61){\small Fortran\space };
+      \node[color=utg]at (1.36,0.62){\small Fortran\space };
 
       \node[color=utg]at (1.60,0.87){\tiny CPUs\space };
 
-      \node[color=uto]at (1.77,0.92){\normalsize AdH\space };
+      \node[color=uto]at (1.80,0.90){\footnotesize AdH\space };
 
-      \node[color=utg]at (1.73,1.06){\small f2py\space };
+      \node[color=uto]at (1.46,0.96){\tiny MATLAB\space };
 
-      \node[color=uto]at (1.76,1.18){\scriptsize ParaView\space };
+      \node[color=utg]at (1.63,1.05){\small LLMs\space };
 
-      \node[color=utg]at (2.20,0.12){\footnotesize OpenMP\space };
+      \node[color=utg]at (1.54,1.19){\scriptsize f2py\space };
+
+      \node[color=uto]at (1.77,1.17){\large CUDA\space };
+
+      \node[color=utg]at (2.39,0.12){\footnotesize OpenMP\space };
+
+      \node[color=uto]at (2.42,0.22){\scriptsize UT Austin\space };
 
       \node[color=uto]at (2.08,0.23){\scriptsize Make\space };
 
-      \node[color=uto]at (2.39,0.21){\scriptsize UT Austin\space };
+      \node[color=utg]at (2.16,0.32){\small x86 Intrinsics\space };
 
-      \node[color=utg]at (2.16,0.32){\small Travis CI\space };
+      \node[color=utg]at (2.33,0.41){\tiny Scaling\space };
 
-      \node[color=utg]at (2.33,0.40){\tiny Compiler Intrinsics\space };
+      \node[color=utg]at (2.73,0.42){\tiny GPT\space };
 
-      \node[color=uto]at (1.93,0.50){\normalsize Applied Math\space };
+      \node[color=uto]at (1.94,0.50){\normalsize Applied Math\space };
+
+      \node[color=utg]at (2.61,0.58){\tiny Libraries\space };
 
       \node[color=utg]at (2.26,0.61){\scriptsize ERDC\space };
 
-      \node[color=uto]at (2.65,0.90){\scriptsize Git\space };
+      \node[color=utg]at (2.12,0.86){\tiny ANSYS\space };
+
+      \node[color=uto]at (2.65,0.90){\footnotesize Git\space };
 
       \node[color=utg]at (2.05,1.03){\huge C/\bigCC{}\space };
 
-      \node[color=uto]at (2.40,1.19){\scriptsize SMS/WMS\space };
+      \node[color=uto]at (2.36,1.18){\tiny ParaView\space };
+
+      \node[color=utg]at (2.74,1.12){\scriptsize AI\space };
+
+      \node[color=uto]at (2.68,1.20){\tiny SMS\space };
 
     \end{tinyb}
 
@@ -138,15 +163,14 @@ documents.
 
 \strut{} %% For ending wrapfig wrapping properly
 
-\vspace{169.8pt}
+\vspace{180.5pt}
 
-\vspace{-2pt}
 %---------------------------------WORK EXPERIENCE------------------------------%
 \section{Work Experience}
   \resumeSubHeadingListStart
 
     %---------------------------------Title------------------------------------%
-    \resumeSubheading{Software Engineer}{\dates{February 2021}{Present}}
+    \resumeSubheading{Math Algorithm Engineer / Software Engineer}{\dates{February 2021}{Present}}
 
       %-------------------------------Job 5------------------------------------%
       \resumeSubSubheading{\textbf{Intel Corporation}}{Austin, TX}
@@ -155,18 +179,28 @@ documents.
             conjugate gradient (HPCG) benchmark components as a contributor in
             the Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
             Kernel Library (oneMKL) team.}
-          \resumeUnlabeledItem{Doubled the performance of sparse matrix-vector
-            product (GEMV) oneMKL SYCL API on latest Intel GPUs using SIMD
-            vectorization and prefetching techniques.}
+          \resumeUnlabeledItem{Led the redefinition of sparse BLAS domain APIs
+            in the oneAPI Specification for the
+            \href{https://github.com/uxlfoundation}{UXL Foundation} as a
+            \href{https://github.com/orgs/uxlfoundation/teams/oneapi-spec-maintainers?query=gajanan-choudhary}{maintainer},
+            and directed and reviewed implementation of Intel oneMKL, NVIDIA
+            cuSPARSE, and AMD ROCm backends in the foundation's open-source
+            implementation of those APIs: the
+            \href{https://github.com/uxlfoundation/oneMath}{oneMath library}.}
           \resumeUnlabeledItem{Implemented GPU performance optimizations for
-            the newly introduced sparse $\times$ sparse matrix product
-            (matmat/spGEMM) SYCL API for compressed sparse row (CSR) matrices
-            in oneMKL.}
-          \resumeUnlabeledItem{Doubled the performance of block sparse row (BSR)
-            matrix $\times$ row-major dense matrix product in oneMKL on CPUs
-            by using AVX512 compiler intrinsics.}
-          \resumeUnlabeledItem{Introduced optimized SYCL APIs in oneMKL
-            for sorting, copying and transposing CSR matrices on GPUs.}
+            the sparse matrix-vector product (GEMV) and sparse $\times$ sparse
+            matrix product (spGEMM) SYCL APIs for compressed sparse row
+            (CSR) matrices.}
+          \resumeUnlabeledItem{Received division awards for implementing 700+
+            general, hand-optimized, type-, SIMD-length-, and
+            architecture-agnostic wrappers over x86 intrinsics APIs that eased
+            kernel development, performance optimization, and testing overhead
+            by orders of magnitude.}
+          \resumeUnlabeledItem{Implemented extreme CPU performance optimizations
+            for CSR and block compressed sparse row (BSR) matrix formats for
+            sparse $\times$ dense matrix multiplication (GEMM) API in oneMKL for
+            AVX2 and AVX512 architectures for all supported types using
+            vectorization, unrolling, x86 intrinsics wrappers, and assembly.}
         \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
@@ -197,8 +231,6 @@ documents.
             of ADCIRC, to enable multi-software coupling and physics-based
             machine learning applications with it for improved hurricane
             flood forecasts.}
-          \resumeUnlabeledItem{Developed, verified, and validated coupled
-            diffusive wave and groundwater models in the CFD software, AdH.}
         \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
@@ -217,9 +249,6 @@ documents.
             documented, and published coupling between 2D and 3D shallow water
             models in AdH for USACE for enabling one of the first simulations of
             flooding with 3D ocean models.}
-          \resumeUnlabeledItem{Developed important physics features in AdH
-            for USACE, including its wind library, 3D prism mesh adaption,
-            and improved parallel load rebalancing in 3D models.}
        \resumeItemListEnd
 
     %---------------------------------Title------------------------------------%
@@ -228,18 +257,17 @@ documents.
       %-------------------------------Job 1------------------------------------%
       \resumeSubSubheading{\textbf{Indian Register of Shipping}}{Mumbai, India}
         \resumeItemListStart
-          \resumeUnlabeledItem{Worked on 3 projects on stress response of ships
-            to various loads, leading to 1 new software and 1 publication.}
           \resumeUnlabeledItem{Created and documented IR-Sect, a MATLAB software
             with a graphical user interface (GUI) for finite element (FE)
-            analysis of 2D ship cross-sections, with capability to translate
-            input to ANSYS.}
+            analysis of 2D ship cross-sections enabling shear flow, bending,
+            torsion, and warping analysis.}
           \resumeUnlabeledItem{Implemented 2D modeling capabilities in IR-Sect,
             including insert, copy, move, mirror, delete, and AutoCAD-style
             selection operations to reduce modeling time to hours from days.}
           \resumeUnlabeledItem{Implemented graph algorithms in IR-Sect for
-            calculating sectorial properties of ship cross-sections to enable
-            shear flow, bending, torsion, and warping analysis.}
+            calculating sectorial properties of ship cross-sections.}
+          \resumeUnlabeledItem{Work on sectorial properties and torsion
+            \href{https://www.irclass.org/media/7468/guidelines-torsion_irs-g-des-17_sept-2024_new.pdf}{published externally as a company guideline in 2024}.}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-3pt}
@@ -247,7 +275,10 @@ documents.
 %-----------------------------------PROJECTS-----------------------------------%
 \section{Select Software Contributions}
   \resumeSubItemListStart
-    \resumeSubItem{Contributor -- \href{https://https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math Kernel Library (oneMKL)}}
+    \resumeSubItem{Maintainer -- \href{https://github.com/uxlfoundation/oneAPI-spec}{sparse BLAS component in the oneAPI Specification}}
+      {Designing and maintaining portable, performant, platform-agnostic,
+      and hardware-agnostic sparse BLAS SYCL math APIs.}
+    \resumeSubItem{Contributor -- \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math Kernel Library (oneMKL)}}
       {Owned feature implementations and CPU/GPU architecture-specific
        performance optimizations for sparse linear algebra and HPCG benchmark
        components in oneMKL, written in \textbf{C}, \textbf{\CC{}},
@@ -261,10 +292,6 @@ documents.
       {Created the C/Python interface of AdH (adhpython), enhanced its meteorological library,
       improved mesh adaption, and coupled its shallow water, ground
       water, and diffusive wave models, all in parallel.}
-    \resumeSubItem{Contributor -- \href{http://adcirc.org/}{ADCIRC}}
-      {Created the Fortran/Python interface of ADCIRC (pyADCIRC), enabling physics
-      based machine learning applications and multi-software coupling in Water
-      Coupler.}
   \resumeSubItemListEnd
 \vspace{-5pt}
 
@@ -275,18 +302,21 @@ documents.
     \resumeSubheading{Software development:}{}
       \resumeItemListStart
         \resumeItem{Programming}{C/\CC{}, SYCL/DP\CC{}, Python, Fortran,
-            MATLAB, MPI, OpenMP, f2py, SWIG, Python/C API, and Bash.}
+            MPI, OpenMP, f2py, Python/C API, and Bash.}
 
-        \resumeItem{Tools}{GitHub, Bitbucket, Git, Mercurial, SVN,
+        \resumeItem{Tools}{Git, GitHub, Copilot, Mercurial, SVN, Bitbucket,
             Travis CI, CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
             Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, \LaTeX{}, HTML,
             and CSS.}
 
-        \resumeItem{Concepts}{Data structures, algorithms, complexity,
-            object-oriented programming (OOP), standard template library (STL),
-            parallel programming, CPU and GPU performance optimization,
-            language interoperability, continuous integration and
-            continuous delivery (CI/CD), and test-driven development (TDD).}
+        \resumeItem{Concepts}{High-performance computing, parallel programming,
+            CPU and GPU performance optimization, kernel development, x86
+            intrinsics, assembly, neural networks, deep learning, large language
+            models, transformers, library engineering, language interoperability,
+            data structures, algorithms, complexity, object-oriented programming
+            (OOP), standard template library (STL), debugging, code coverage,
+            continuous integration and continuous delivery (CI/CD), and
+            test-driven development (TDD).}
       \resumeItemListEnd
 
     \resumeSubheading{Research:}{}
@@ -300,11 +330,6 @@ documents.
           {Computational mechanics, computational fluid dynamics (CFD), solid
           mechanics, structural dynamics, fluid-structure interaction, and
           coupled numerical models.}
-
-        \resumeItem{Applications}
-          {Adaptive Hydraulics (AdH), ADvanced CIRCulation (ADCIRC), Gridded
-          Surface Subsurface Hydrologic Analysis (GSSHA), ANSYS, Abaqus,
-          ParaView, Aquaveo SMS/WMS, and AutoCAD.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
