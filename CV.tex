@@ -33,14 +33,14 @@
 
 %------------------------------------SUMMARY-----------------------------------%
 \section{Summary}
-Computational scientist with 12+ years of interdisciplinary research and
+Performance engineer and computational scientist with over a decade of
+interdisciplinary research, artificial intelligence (AI), and
 high-performance computing (HPC) production software development experience
-through long-term projects spanning applied mathematics, CPU/GPU kernel
-development, optimization, and machine learning.
-Creator of 4 scientific software, contributor to 5 HPC software written in
-C/C++, SYCL, Python, and Fortran, maintainer of the sparse BLAS domain in the
-open-source oneAPI Specification under the Unified Acceleration (UXL)
-foundation, and author of 6 technical publications.
+through long-term projects spanning CPU/GPU/custom AI accelerator kernel
+development, scientific computing, deep learning, and applied mathematics.
+Creator, maintainer, and contributor of numerous AI/HPC scientific software
+written in C/C++, SYCL, Python, and Fortran, and author of 6 technical
+publications.
 %% \\[1\baselineskip] added above since \parbox{0.546\linewidth}{\section{Summary}}
 %% messes up line spacing in the new section causing overlapping lines.
 
@@ -63,6 +63,8 @@ foundation, and author of 6 technical publications.
 
       \node[color=utg]at (0.17,0.34){\Large Python\space };
 
+      \node[color=uto]at (0.10,0.44){\tiny Cursor\space };
+
       \node[color=uto]at (0.36,0.48){\footnotesize Sparse BLAS\space };
 
       \node[color=utg]at (0.12,0.56){\scriptsize SWIG\space };
@@ -70,6 +72,8 @@ foundation, and author of 6 technical publications.
       \node[color=utg]at (0.43,0.61){\normalsize MPI\space };
 
       \node[color=utg]at (0.73,0.62){\tiny Algebra\space };
+
+      \node[color=uto]at (0.1,0.85){\tiny MoE\space };
 
       \node[color=utg]at (0.30,0.86){\scriptsize GEMMs\space };
 
@@ -95,7 +99,9 @@ foundation, and author of 6 technical publications.
 
       \node[color=uto]at (1.28,0.14){\scriptsize Performance engineering\space };
 
-      \node[color=utg]at (1.45,0.22){\tiny Image Processing\space };
+      \node[color=uto]at (1.29,0.21){\tiny Claude\space };
+
+      \node[color=utg]at (1.52,0.22){\tiny Image Processing\space };
 
       \node[color=utg]at (1.66,0.32){\footnotesize CI/CD\space };
 
@@ -117,7 +123,7 @@ foundation, and author of 6 technical publications.
 
       \node[color=uto]at (1.46,0.96){\tiny MATLAB\space };
 
-      \node[color=utg]at (1.63,1.05){\small LLMs\space };
+      \node[color=uto]at (1.57,1.05){\scriptsize Tenstorrent\space };
 
       \node[color=utg]at (1.54,1.19){\scriptsize f2py\space };
 
@@ -143,15 +149,19 @@ foundation, and author of 6 technical publications.
 
       \node[color=utg]at (2.12,0.86){\tiny ANSYS\space };
 
+      \node[color=uto]at (2.45,0.87){\tiny JIT\space };
+
       \node[color=uto]at (2.65,0.90){\footnotesize Git\space };
 
       \node[color=utg]at (2.05,1.03){\huge C/\bigCC{}\space };
 
-      \node[color=uto]at (2.36,1.18){\tiny ParaView\space };
+      \node[color=uto]at (2.33,1.13){\tiny Scale-up\space };
 
-      \node[color=utg]at (2.74,1.12){\scriptsize AI\space };
+      \node[color=utg]at (2.40,1.19){\tiny Scale-out\space };
 
-      \node[color=uto]at (2.68,1.20){\tiny SMS\space };
+      \node[color=utg]at (2.70,1.12){\scriptsize AI\space };
+
+      \node[color=utg]at (2.74,1.20){\tiny LLMs\space };
 
     \end{tinyb}
 
@@ -172,14 +182,33 @@ foundation, and author of 6 technical publications.
   \resumeSubHeadingListStart
 
     %---------------------------------Title------------------------------------%
-    \resumeSubheading{Math Algorithm Engineer / Software Engineer}{\dates{February 2021}{Present}}
+    \resumeSubheading{Senior Staff Software Engineer}{\dates{January 2026}{Present}}
+
+      %-------------------------------Job 6------------------------------------%
+      \resumeSubSubheading{\textbf{Tenstorrent}}{Jersey City, NJ}
+        \resumeItemListStart
+          \resumeUnlabeledItem{Developed and optimized AI kernels in
+            TT-Metalium™, Tenstorrent's open-source, low-level AI hardware SDK,
+            for enabling frontier large language and vision models on
+            Tenstorrent AI accelerators.}
+          \resumeUnlabeledItem{Delivered a natively scaled up, scaled out,
+            generalized mixture of experts (MoE) module to help enable a swath
+            of LLM architectures.}
+          \resumeUnlabeledItem{Delivered architectural refactors for enabling
+            future, non-backwards-compatible, Quasar AI accelerator.}
+          \resumeUnlabeledItem{Improved out-of-box kernel selection for the
+            matrix multiplication API through a better decision tree.}
+        \resumeItemListEnd
+
+    %---------------------------------Title------------------------------------%
+    \resumeSubheading{Math Algorithm Engineer}{\dates{February 2021}{January 2026}}
 
       %-------------------------------Job 5------------------------------------%
       \resumeSubSubheading{\textbf{Intel Corporation}}{Austin, TX}
         \resumeItemListStart
-          \resumeUnlabeledItem{Owned sparse linear algebra and high-performance
-            conjugate gradient (HPCG) benchmark components as a contributor in
-            the Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
+          \resumeUnlabeledItem{Owned sparse linear algebra components as a
+            contributor in the
+            Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math
             Kernel Library (oneMKL) team.}
           \resumeUnlabeledItem{Led the redefinition of sparse BLAS domain APIs
             in the oneAPI Specification for the
@@ -294,14 +323,18 @@ foundation, and author of 6 technical publications.
 %-----------------------------------PROJECTS-----------------------------------%
 \section{Software Contributions}
   \resumeSubItemListStart
+    \resumeSubItem{Contributor -- \href{https://github.com/tenstorrent/tt-metal}{TT-Metalium\texttrademark}}
+      {Developed and maintained performance-optimized kernels for AI operators
+      and linear algebra for frontier model enablement on Tenstorrent AI
+      accelerators.}
     \resumeSubItem{Maintainer -- \href{https://github.com/uxlfoundation/oneAPI-spec}{sparse BLAS component in the oneAPI Specification}}
-      {Designing and maintaining portable, performant, platform-agnostic,
+      {Designed and delivered portable, performant, platform-agnostic,
       and hardware-agnostic sparse BLAS SYCL math APIs.}
     \resumeSubItem{Contributor -- \href{https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl.html}{Intel\textsuperscript{\scriptsize{\textregistered}} oneAPI Math Kernel Library (oneMKL)}}
       {Owned feature implementations and CPU/GPU architecture-specific
-       performance optimizations for sparse linear algebra and HPCG benchmark
-       components in oneMKL, written in \textbf{C}, \textbf{\CC{}},
-       \textbf{SYCL/DP\CC{}}, and \textbf{Fortran}.}
+       performance optimizations for sparse linear algebra components in oneMKL,
+       written in \textbf{C}, \textbf{\CC{}}, \textbf{SYCL/DP\CC{}}, and
+       \textbf{Fortran}.}
     \resumeSubItem{Creator -- \href{https://github.com/gajanan-choudhary/water-coupler}{Water Coupler}}
       {Developed the \textbf{open-source parallel Python} software for coupling
       physics models, AdH (\textbf{C}), GSSHA (\textbf{\CC{}}), and ADCIRC
@@ -341,10 +374,12 @@ foundation, and author of 6 technical publications.
         \resumeItem{Programming}{C/\CC{}, SYCL/DP\CC{}, Python, Fortran,
             MATLAB, MPI, OpenMP, f2py, SWIG, Python/C API, and Bash.}
 
-        \resumeItem{Tools}{Git, GitHub, Copilot, Mercurial, SVN, Bitbucket,
-            Travis CI, CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
-            Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, \LaTeX{}, HTML,
-            and CSS.}
+        \resumeItem{AI Tools}{Cursor, Claude Code, GitHub Copilot, and agentic
+            workflows.}
+
+        \resumeItem{Tools}{Git, GitHub, Mercurial, SVN, Bitbucket, Travis CI,
+            CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make, Gcov, LCOV,
+            GProf, GDB, Valgrind, Doxygen, Sphinx, HTML, CSS, and \LaTeX{}.}
 
         \resumeItem{Concepts}{High-performance computing, parallel programming,
             CPU and GPU performance optimization, kernel development, x86
