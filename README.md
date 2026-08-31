@@ -19,7 +19,7 @@ interdisciplinary research, artificial intelligence (AI), and
 high-performance computing (HPC) production software development experience
 through long-term projects spanning CPU/GPU/custom AI accelerator kernel
 development, scientific computing, deep learning, and applied mathematics.
-Creator, maintainer, and contributor of numerous AI/HPC scientific software
+Creator of and contributor to numerous AI/HPC software products
 written in C/C++, SYCL, Python, and Fortran, and author of 6 technical
 publications.
 
@@ -68,7 +68,7 @@ publications.
 
 * Math Algorithm Engineer, Intel Corporation,
   Austin, TX, February 2021 - January 2026.
-  - Responsibilities: Developing and optimizing sparse linear algebra components
+  - Responsibilities: Developed and optimized sparse linear algebra components
     as a contributor in the Intel® oneAPI Math Kernel Library (oneMKL) team.
   - Led the redefinition of sparse BLAS domain APIs in the oneAPI
     Specification for the UXL Foundation as a maintainer,
