@@ -20,7 +20,7 @@ high-performance computing (HPC) production software development experience
 through long-term projects spanning CPU/GPU/custom AI accelerator kernel
 development, scientific computing, deep learning, and applied mathematics.
 Creator, maintainer, and contributor of numerous AI/HPC scientific software
-software written in C/C++, SYCL, Python, and Fortran, and author of 6 technical
+written in C/C++, SYCL, Python, and Fortran, and author of 6 technical
 publications.
 
 
@@ -28,7 +28,7 @@ publications.
 * Software development:
     - Programming: C/C++, SYCL/DPC++, Python, Fortran, MATLAB, MPI,
       OpenMP, f2py, SWIG, Python/C API, and Bash.
-    - AI Tools: Claude code, Cursor, GitHub Copilot, and agentic workflows
+    - AI Tools: Claude Code, Cursor, GitHub Copilot, and agentic workflows.
     - Tools: Git, GitHub, Bitbucket, Mercurial, SVN, Travis CI,
       CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
       Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, LaTeX, HTML, and CSS.
