@@ -61,9 +61,9 @@ publications.
     large language and vision models on Tenstorrent AI accelerators.
   - Delivered a natively scaled up, scaled out, generalized mixture of
     experts (MoE) module in TT-Metalium to enable a swath of LLM architectures.
-  - Delivered architectural refactors for enabling future,
-    non-backwards-compatible, Quasar AI accelerator in TT-Metalium.
-  - Improved out-of-box kernel selection for the matrix multiplication API
+  - Refactored the codebase for enabling next-generation,
+    non-backwards-compatible AI accelerator in TT-Metalium.
+  - Improved out-of-the-box kernel selection for the matrix multiplication API
     through an improved decision tree.
 
 * Math Algorithm Engineer, Intel Corporation,
