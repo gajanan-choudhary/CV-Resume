@@ -2,7 +2,7 @@
 
 E-mail: gajananchoudhary91@gmail.com
 
-Address: Austin, TX, USA
+Address: Jersey City, NJ, USA
 
 Phone: +1 (512) 657-3030
 
@@ -14,21 +14,22 @@ Website: https://gajanan-choudhary.github.io
 
 
 ## Summary
-Computational scientist with 12+ years of interdisciplinary research and
+Performance engineer and computational scientist with over a decade of
+interdisciplinary research, artificial intelligence (AI), and
 high-performance computing (HPC) production software development experience
-through long-term projects spanning applied mathematics, CPU/GPU kernel
-development, optimization, and machine learning.
-Creator of 4 scientific software, contributor to 5 HPC software written in
-C/C++, SYCL, Python, and Fortran, maintainer of the sparse BLAS domain in the
-open-source oneAPI Specification under the Unified Acceleration (UXL)
-foundation, and author of 6 technical publications.
+through long-term projects spanning CPU/GPU/custom AI accelerator kernel
+development, scientific computing, deep learning, and applied mathematics.
+Creator of and contributor to numerous AI/HPC software products
+written in C/C++, SYCL, Python, and Fortran, and author of 6 technical
+publications.
 
 
 ## Skills
 * Software development:
     - Programming: C/C++, SYCL/DPC++, Python, Fortran, MATLAB, MPI,
       OpenMP, f2py, SWIG, Python/C API, and Bash.
-    - Tools: Git, GitHub, Copilot, Bitbucket, Mercurial, SVN, Travis CI,
+    - AI Tools: Claude Code, Cursor, GitHub Copilot, and agentic workflows.
+    - Tools: Git, GitHub, Bitbucket, Mercurial, SVN, Travis CI,
       CircleCI, Docker, Coveralls, Codecov, CMake, GNU Make,
       Gcov, LCOV, GProf, GDB, Valgrind, Doxygen, LaTeX, HTML, and CSS.
     - Concepts: High-performance computing, parallel programming,
@@ -53,11 +54,22 @@ foundation, and author of 6 technical publications.
 
 
 ## Work Experience
-* Math Algorithm Engineer / Software Engineer, Intel Corporation,
-  Austin, TX, February 2021 - Present.
-  - Responsibilities: Owned sparse linear algebra and high-performance
-    conjugate gradient (HPCG) benchmark components as a contributor in the
-    Intel® oneAPI Math Kernel Library (oneMKL) team.
+* Senior Staff Software Engineer, Tenstorrent,
+  Jersey City, NJ, January 2026 - Present.
+  - Responsibilities: Developing and optimizing AI kernels in TT-Metalium™,
+    Tenstorrent's open-source, low-level AI hardware SDK, for enabling frontier
+    large language and vision models on Tenstorrent AI accelerators.
+  - Delivered a natively scaled up, scaled out, generalized mixture of
+    experts (MoE) module in TT-Metalium to support a swath of LLM architectures.
+  - Refactored the codebase for enabling next-generation,
+    non-backwards-compatible AI accelerator in TT-Metalium.
+  - Improved out-of-the-box kernel selection for the matrix multiplication API
+    through an improved decision tree.
+
+* Math Algorithm Engineer, Intel Corporation,
+  Austin, TX, February 2021 - January 2026.
+  - Responsibilities: Developed and optimized sparse linear algebra components
+    as a contributor in the Intel® oneAPI Math Kernel Library (oneMKL) team.
   - Led the redefinition of sparse BLAS domain APIs in the oneAPI
     Specification for the UXL Foundation as a maintainer,
     and directed and reviewed implementation of Intel oneMKL, NVIDIA
@@ -184,6 +196,10 @@ foundation, and author of 6 technical publications.
 
 
 ## Software contributions
+  * Contributor, TT-Metalium™, Tenstorrent's low-level AI hardware SDK:
+    Delivered various features, architectural improvements, and performance
+    optimizations to AI/LLM kernels for open-weight frontier model enablement
+    on Tenstorrent devices.
   * Maintainer, Sparse BLAS component in the oneAPI Specification:
     Designing and maintaining portable, performant, platform-agnostic,
     and hardware-agnostic sparse BLAS SYCL math APIs.
